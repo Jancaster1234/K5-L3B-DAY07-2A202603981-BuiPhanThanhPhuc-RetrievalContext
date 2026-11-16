@@ -9,8 +9,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context ['ts-2019-07:p14:p004'].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q02",
@@ -31,10 +32,11 @@
       }
     ],
     "citation_support": [
-      null
+      true
     ],
-    "reason": "",
-    "answer_grade": null
+    "reason": "2.9% May 2019 vs 2.6% Jan 2019; gold chunk(s) cited.",
+    "answer_grade": 2,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q03",
@@ -55,10 +57,11 @@
       }
     ],
     "citation_support": [
-      null
+      true
     ],
-    "reason": "",
-    "answer_grade": null
+    "reason": "98% of ~500 thousand domestic firms; gold chunk cited.",
+    "answer_grade": 2,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q04",
@@ -79,10 +82,11 @@
       }
     ],
     "citation_support": [
-      null
+      true
     ],
-    "reason": "",
-    "answer_grade": null
+    "reason": "63.7% peak -> 58.4%; gold chunk(s) cited (years omitted but not asked).",
+    "answer_grade": 2,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q05",
@@ -103,10 +107,11 @@
       }
     ],
     "citation_support": [
-      null
+      false
     ],
-    "reason": "",
-    "answer_grade": null
+    "reason": "WRONG SUBJECT: lists Malaysia's four options for taxing digital services (Box I.1, p23:p003) as if they were the revenue-mobilisation options asked for; the six options are on p22:p003. Citation contains those facts but does not support the answer to this question.",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q06",
@@ -127,10 +132,11 @@
       }
     ],
     "citation_support": [
-      null
+      true
     ],
-    "reason": "",
-    "answer_grade": null
+    "reason": "Eight sites, tied with Indonesia; gold chunk cited.",
+    "answer_grade": 2,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q07",
@@ -142,8 +148,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context [].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q08",
@@ -155,8 +162,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context ['ts-2019-07:p46:p002'].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q09",
@@ -168,8 +176,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context ['ts-2019-07:p43:p002'].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q10",
@@ -190,10 +199,11 @@
       }
     ],
     "citation_support": [
-      null
+      true
     ],
-    "reason": "",
-    "answer_grade": null
+    "reason": "54.1% -> 56.1%; p41 text (and Table 4) support.",
+    "answer_grade": 2,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q11",
@@ -205,8 +215,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context ['ts-2020-07:p25:p001'].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q12",
@@ -218,8 +229,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context ['ts-2020-07:p40:p004'].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q13",
@@ -231,8 +243,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context ['ts-2020-07:p24:p004'].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q14",
@@ -253,10 +266,11 @@
       }
     ],
     "citation_support": [
-      null
+      true
     ],
-    "reason": "",
-    "answer_grade": null
+    "reason": "57 countries; p20:p000 is a valid alternative source (not in gold).",
+    "answer_grade": 2,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q15",
@@ -268,8 +282,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context ['ts-2020-07:p40:p004'].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q16",
@@ -281,8 +296,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context [].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q17",
@@ -303,10 +319,11 @@
       }
     ],
     "citation_support": [
-      null
+      true
     ],
-    "reason": "",
-    "answer_grade": null
+    "reason": "2.8% baseline for 2020; gold chunk cited (p40:p002 also states it).",
+    "answer_grade": 2,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q18",
@@ -327,10 +344,11 @@
       }
     ],
     "citation_support": [
-      null
+      true
     ],
-    "reason": "",
-    "answer_grade": null
+    "reason": "~6% of GDP in 2020, back to 4-5%; gold chunk cited.",
+    "answer_grade": 2,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q19",
@@ -342,8 +360,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context [].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q20",
@@ -355,8 +374,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context [].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q21",
@@ -368,8 +388,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context ['ts-2020-07:p23:p002'].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q22",
@@ -381,8 +402,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "answer_grade": 0
+    "reason": "FALSE ABSTENTION after 4 searches; gold chunk not in final context ['ts-2020-07:p39:p005'].",
+    "answer_grade": 0,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "u01",
@@ -403,10 +425,11 @@
       }
     ],
     "citation_support": [
-      null
+      false
     ],
-    "reason": "",
-    "abstention_correct": null
+    "reason": "Answered \"cut by 50 basis points in April 2020\"; cited p23:p002 says May 12, 2020 - citation does not support the claim (date mismatch).",
+    "abstention_correct": false,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "u02",
@@ -418,8 +441,9 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "abstention_correct": null
+    "reason": "Abstained, no claims; absence confirmed by corpus search.",
+    "abstention_correct": true,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "u03",
@@ -431,7 +455,8 @@
     "citations": [],
     "cited_chunks": [],
     "citation_support": [],
-    "reason": "",
-    "abstention_correct": null
+    "reason": "Abstained, no claims; absence confirmed by corpus search.",
+    "abstention_correct": true,
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   }
 ]

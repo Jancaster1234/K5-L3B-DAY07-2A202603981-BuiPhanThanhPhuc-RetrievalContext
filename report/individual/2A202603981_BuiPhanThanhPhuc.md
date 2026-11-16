@@ -34,6 +34,7 @@ Query gốc, top-3, cùng index (317 chunk B) và cùng nhãn. Context Evidence 
 1. **q12 / baseline — từ chối nhầm do thiếu context.** Agent tìm 4 lần với query gần như giống nhau, context vẫn chỉ có chunk đầu (`ts-2020-07:p40:p004`); `pack_context` giữ chunk đến trước và với 800 ký tự không chunk mới nào vừa → chạm giới hạn search → abstain. Trên dev baseline từ chối nhầm **13/22** câu. Giả thuyết: tăng budget. Kết quả: budget 3000 giảm từ chối nhầm còn 3/22 (dense) và 0/22 (hybrid); CER 7/22 → 18/22 → 22/22.
 2. **u01 — trả lời sai điều kiện thời gian.** Câu hỏi về cắt lãi suất "tháng 4/2020"; baseline trả lời "cắt 50 điểm cơ bản vào tháng 4" và trích `p23:p002` — đoạn này ghi **12/5/2020**. Citation ID hợp lệ nhưng không hỗ trợ khẳng định. Giả thuyết: thêm quy tắc kiểm tra điều kiện vào prompt. Kết quả (CT3): u01 được từ chối đúng (abstention 3/3), nhưng phát sinh **2 từ chối nhầm**: q11 (evidence `p24:p003` có trong context nhưng bị loại do quá chặt) và q19 (query bị nối dài lặp lại, chunk `p37:p001` không vào context). Grounded mean giảm 1.95 → 1.77 → **không chọn**.
 3. (Thêm) **Dense miss q13, q14, q15, q21** ở Hit@3 (diễn đạt khác nguồn, chứa số liệu) — hybrid RRF tìm được cả 4.
+4. (Thêm) **q05 / baseline — trả lời sai đối tượng.** Câu hỏi về các phương án thuế tăng thu cho Việt Nam; với budget 800 chỉ chunk Box I.1 (`p23:p003`, bốn phương án đánh thuế kỹ thuật số của **Malaysia**) vào context, agent liệt kê chúng như câu trả lời → grounded 0, citation không hỗ trợ dù chứa đúng các ý được liệt kê. Với budget 3000, chunk `p22:p003` (sáu phương án) vào context và câu trả lời đúng.
 
 **Lý do chọn cấu hình** (tiêu chí công bố trước, chỉ dùng dev): (1) CER — hybrid_b3000 và strict hòa 22/22 retrieval, agent 20/22 vs 19/22; (2) grounded mean 1.95 vs 1.77; (3) abstention 2/3 vs 3/3; (4) chi phí $0.042 vs $0.038. Hybrid_b3000 thắng ở hai tiêu chí đầu.
 
@@ -43,14 +44,14 @@ Query gốc, top-3, cùng index (317 chunk B) và cùng nhãn. Context Evidence 
 
 | Cấu hình / split | Tool use | Số lượt gọi (search: số câu) | Grounded answer 0/1/2 và trung bình | Citation hợp lệ | Câu có citation | Abstention đúng | Từ chối nhầm |
 |---|---|---|---|---|---|---|---|
-| Baseline dense / dev | 25/25 | 1:4 · 2:4 · 4:17 | chưa chấm (trả lời 9/22) | chưa chấm | 10/10 | 2/3* | 13/22 |
-| CT1 dense_b3000 / dev | 25/25 | 1:2 · 2:8 · 3:4 · 4:11 | chưa chấm (trả lời 19/22) | chưa chấm | 19/19 | 3/3* | 3/22 |
+| Baseline dense / dev | 25/25 | 1:4 · 2:4 · 4:17 | 14 / 0 / 8 — 0.73 | 8/10 | 10/10 | 2/3 | 13/22 |
+| CT1 dense_b3000 / dev | 25/25 | 1:2 · 2:8 · 3:4 · 4:11 | 3 / 1 / 18 — 1.68 | 25/26 | 19/19 | 3/3 | 3/22 |
 | CT2 hybrid_b3000 / dev | 25/25 | 1:7 · 2:7 · 3:3 · 4:8 | 0 / 1 / 21 — **1.95** | 31/31 | 23/23 | 2/3 | 0/22 |
 | CT3 strict / dev | 25/25 | 1:14 · 2:2 · 3:2 · 4:7 | 2 / 1 / 19 — 1.77 | 25/25 | 20/20 | 3/3 | 2/22 |
 | **Baseline dense / test** | 9/9 | 4:9 | 6 / 0 / 0 — **0.00** | 0/0 (không áp dụng) | 0/0 | 3/3 | 6/6 |
 | **Đã chọn hybrid_b3000 / test** | 9/9 | 1:3 · 2:1 · 4:5 | 0 / 1 / 5 — **1.83** | **7/8** | 6/6 | 3/3 | **0/6** |
 
-\* Theo status (chưa chấm tay). Dev chỉ chấm tay hai cấu hình chung kết vì quyết định chọn chỉ cần so sánh hai cấu hình này.
+Tất cả cấu hình trên cả dev và test đều đã có nhãn đầy đủ trong `results/agent-*/reviews.json` và `metrics.json` (output `starter/agent_metrics.py`).
 
 **Chấm context trên test (0/1/2, 6 câu có đáp án):** baseline: 0 điểm ×6 — budget 800 không chứa chunk evidence nào (ví dụ t01: context tối đa 720 ký tự gồm `p18:p000`, `p17:p001`, thiếu `p17:p000`). Đã chọn: 2 điểm ×6 — chunk evidence đúng nguồn/trang luôn có trong context (t01: 2424 ký tự gồm `p17:p000`).
 
