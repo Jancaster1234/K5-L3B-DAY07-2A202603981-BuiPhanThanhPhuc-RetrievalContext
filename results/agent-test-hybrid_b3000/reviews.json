@@ -47,7 +47,7 @@
     ],
     "reason": "Numbers 0.27 vs 0.47 match p43:p001, and the original PDF p43 also reads \"around 0.27 cents per dollar compared to an average of 0.47 cents\". The answer rewrites the unit as \"$0.27 of each dollar\"; BENCHMARK requires exact units, so graded 1 (partly correct).",
     "answer_grade": 1,
-    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student; reviewed and agreed by the student 2026-11-16"
   },
   {
     "query_id": "t03",
@@ -80,7 +80,7 @@
     ],
     "reason": "42% trained in tourism, 38% from other sectors, 20% no training - correct from p50:p000. Second citation p49:p002 is about labour productivity growth and does NOT support these figures (invalid citation). Confirmed on original PDF: p49 contains no 42/38/20 percent figures.",
     "answer_grade": 2,
-    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student; reviewed and agreed by the student 2026-11-16"
   },
   {
     "query_id": "t04",

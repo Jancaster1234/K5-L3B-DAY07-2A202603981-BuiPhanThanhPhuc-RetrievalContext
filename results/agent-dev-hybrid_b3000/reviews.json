@@ -387,7 +387,7 @@
     ],
     "reason": "57 countries; p20:p000 says \"only 57 countries with a positive GDP growth in 2020, down from 171\" (valid alternative source not listed in gold). Omits \"out of 191\".",
     "answer_grade": 2,
-    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student; reviewed and agreed by the student 2026-11-16"
   },
   {
     "query_id": "q15",
@@ -437,7 +437,7 @@
     ],
     "reason": "Gives 6.8% in Q1 2019 but omits the requested comparison with a year earlier (7.5% in Q1 2018). p16:p001 table supports 6.8%.",
     "answer_grade": 1,
-    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student; reviewed and agreed by the student 2026-11-16"
   },
   {
     "query_id": "q17",
