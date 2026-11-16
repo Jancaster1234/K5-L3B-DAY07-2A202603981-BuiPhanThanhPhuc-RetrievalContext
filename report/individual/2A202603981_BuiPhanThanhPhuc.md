@@ -25,6 +25,8 @@ Query gốc, top-3, cùng index (317 chunk B) và cùng nhãn. Context Evidence 
 | Cấu hình đã chọn | `configs/selected.json` = hybrid_b3000 | Chốt trên dev, commit `5b32e6c` trước khi chạy test | test | 6/6 (100%) | 6/6 (100%) | 6/6 (100%) | 74 ms / $0 |
 | Baseline | Dense, k=3, budget 800 | | test | 4/6 (67%) | 5/6 (83%) | 0/6 (0%) | 57 ms / $0 |
 
+**Query gốc và query do agent viết lại:** bảng trên chỉ dùng **query gốc** (câu hỏi benchmark, một lượt). Trong agent, model tự viết query cho từng lượt `search` (viết lại/mở rộng, có thể nhiều lượt); mọi query viết lại được lưu trong `events[].query` của `results/agent-*/traces.json`. Kết quả của cả pipeline nhiều lượt = **context evidence của agent** (evidence có trong context cuối gửi model): dev baseline 7/22, CT1 16/22, CT2 20/22, CT3 19/22; test baseline 0/6, đã chọn 6/6. Chỉ số này có thể thấp hơn CER một lượt (CT2: 20/22 so với 22/22) vì query viết lại đôi khi kéo chunk khác vào trước và `pack_context` giữ chunk đến trước.
+
 `hybrid_rerank` (LLM chấm 0–3 trên 20 candidate) đã cài đặt và có test đơn vị nhưng **không benchmark** vì hybrid đã đạt Evidence Hit@3 22/22 trên dev; không báo kết quả cho cấu hình này.
 
 **Hai lỗi dev, nguyên nhân, cách thử:**
