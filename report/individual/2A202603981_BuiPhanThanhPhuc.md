@@ -1,6 +1,6 @@
 # Báo cáo Day 7 — Bùi Phan Thanh Phúc (2A202603981)
 
-> **Trạng thái nhãn:** toàn bộ nhãn chấm (`results/*/reviews.json`) là **bản nháp do AI hỗ trợ** (trường `label_status`), học viên cần đọc đối chiếu chunk được trích dẫn và sửa trước khi nộp. Sau khi sửa, chạy lại `starter/agent_metrics.py` và cập nhật các bảng bên dưới.
+> **Cách chấm nhãn (minh bạch):** nhãn trong `results/*/reviews.json` do trợ lý AI (Claude Code) chấm theo BENCHMARK.md, đọc từng câu trả lời với chunk được trích dẫn, sau đó **đối chiếu lại với PDF gốc** (văn bản trang PDF qua PyMuPDF) cho toàn bộ 9 câu test: mọi con số trong câu trả lời có trên đúng trang; citation `p49:p002` của t03 xác nhận không hỗ trợ; câu thiếu evidence được tìm trên **toàn bộ trang vật lý** của hai PDF. Học viên đã đọc hiểu tiêu chí chấm và các trường hợp cần phán đoán (t02, t03, q14, q16) nhưng **không tự chấm lại độc lập từng câu**; người chấm có thể kiểm tra lại qua trường `reason` và `cited_chunks` trong từng file.
 
 ## Dữ liệu và benchmark
 
@@ -57,7 +57,7 @@ Query gốc, top-3, cùng index (317 chunk B) và cùng nhãn. Context Evidence 
 | t04 (đã chọn) | Có đáp án, direct | 1 search "household survey share of family businesses closed…" → `ts-2020-07:p30:p001` top | "Only 4.3% of family businesses had closed… by June 2020 [ts-2020-07:p30:p001]" | Grounded 2; citation đúng (Box 1, p30) |
 | u05 (đã chọn) | Thiếu evidence | 4 search về "Phu Quoc hotel rooms occupancy" → không chunk nào nhắc Phu Quoc | Abstain: "Không đủ bằng chứng để trả lời." | Abstention đúng; "Phu Quoc"/"occupancy" 0 kết quả trong 81 trang |
 | t03 (đã chọn) | Có đáp án, conditional | 2 search; lượt 2 dùng thuật ngữ từ context | "42%… 38%… 20%… [p50:p000] [p49:p002]" | Grounded 2; citation 1/2 — `p49:p002` nói về năng suất lao động, **không** hỗ trợ con số |
-| t02 (đã chọn) | Có đáp án, paraphrase | 4 search → `p43:p001` | "About $0.27 of each dollar… vs $0.47 [p43:p001]" | Grounded 1 (nháp): nguồn ghi "0.27 cents per dollar", câu trả lời đổi đơn vị thành "$0.27" |
+| t02 (đã chọn) | Có đáp án, paraphrase | 4 search → `p43:p001` | "About $0.27 of each dollar… vs $0.47 [p43:p001]" | Grounded 1: nguồn (cả PDF gốc) ghi "0.27 cents per dollar", câu trả lời đổi đơn vị thành "$0.27" |
 | t01 (baseline) | Có đáp án | 4 search; context ≤720 ký tự, thiếu `p17:p000` → chạm giới hạn | Abstain | Grounded 0 — từ chối nhầm do budget |
 | u01 (baseline, dev) | Thiếu evidence | 1 search → `p23:p002` (timeline) | "cut… by 50 basis points in April 2020 [p23:p002]" | Abstention sai; đoạn trích ghi 12/5/2020 — citation không hỗ trợ |
 
@@ -65,7 +65,7 @@ Query gốc, top-3, cùng index (317 chunk B) và cùng nhãn. Context Evidence 
 - **Kết quả trước/sau, ví dụ lỗi, đánh đổi và giới hạn:**
   - Trước/sau trên test: grounded mean 0.00 → 1.83, từ chối nhầm 6/6 → 0/6, abstention giữ 3/3, chi phí +19% ($0.012 → $0.014), thời gian tương đương. Budget 3000 tăng token vào mỗi lượt (~1.6×) nhưng giảm số lượt search.
   - Đánh đổi prompt strict: an toàn hơn với câu thiếu evidence (3/3) nhưng từ chối nhầm 2/22; không chọn.
-  - Giới hạn: (1) test chỉ 9 câu, mỗi cấu hình chạy 1 lần (LLM không tất định, không có khoảng tin cậy); (2) dev gồm câu Day 6 đã xem trước; (3) nhãn là bản nháp AI hỗ trợ, cần học viên xác nhận; (4) u01 ở CT2 là "từ chối mềm" — nội dung đúng nhưng dùng tool `answer`, script tính là không abstain; (5) agent đôi khi nối query thành chuỗi dài lặp từ khóa (query drift); (6) `pack_context` ưu tiên chunk đến trước nên lượt search sau có thể không thêm được evidence; (7) q14: agent trích `p20:p000` (nguồn thay thế hợp lệ không có trong gold) — chấm thủ công đúng; (8) corpus tiếng Anh nên bigram âm tiết tiếng Việt không được kiểm chứng trên dữ liệu tiếng Việt.
+  - Giới hạn: (1) test chỉ 9 câu, mỗi cấu hình chạy 1 lần (LLM không tất định, không có khoảng tin cậy); (2) dev gồm câu Day 6 đã xem trước; (3) nhãn do AI chấm và đối chiếu PDF gốc, học viên không chấm lại độc lập (xem ghi chú đầu báo cáo); dev chỉ đối chiếu với chunk, chưa đối chiếu PDF; (4) u01 ở CT2 là "từ chối mềm" — nội dung đúng nhưng dùng tool `answer`, script tính là không abstain; (5) agent đôi khi nối query thành chuỗi dài lặp từ khóa (query drift); (6) `pack_context` ưu tiên chunk đến trước nên lượt search sau có thể không thêm được evidence; (7) q14: agent trích `p20:p000` (nguồn thay thế hợp lệ không có trong gold) — chấm thủ công đúng; (8) corpus tiếng Anh nên bigram âm tiết tiếng Việt không được kiểm chứng trên dữ liệu tiếng Việt.
 
 ## Thử thách nâng cao (nếu thực hiện)
 

@@ -563,7 +563,7 @@
   "type": "unanswerable",
   "expected_behavior": "search_and_abstain",
   "question": "How many hotel rooms does Phu Quoc have, and what is their average occupancy rate?",
-  "absence_reason": "'Phu Quoc', 'hotel rooms' and 'occupancy' have 0 hits in all 81 pages; the tourism chapter discusses destinations but not Phu Quoc or room capacity."
+  "absence_reason": "'Phu Quoc', 'hotel rooms' and 'occupancy' have 0 hits in all 81 pages; the tourism chapter discusses destinations but not Phu Quoc or room capacity. Re-check on the original PDFs (all physical pages, 2026-11-16, after the test run; question and label unchanged): the only match is 'Each new hotel room' on 2019 p48, about national room-stock growth (16.3% vs 9.6%), with no Phu Quoc or occupancy figure."
  },
  {
   "origin": "day7-new",

@@ -22,7 +22,7 @@
     ],
     "reason": "5.2% contraction stated; cited p11 chunk contains gold evidence.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q02",
@@ -47,7 +47,7 @@
     ],
     "reason": "2.9% May 2019 vs 2.6% Jan 2019; filter 2019 edition; gold chunk cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q03",
@@ -72,7 +72,7 @@
     ],
     "reason": "98% stated (omits \"of ~500 thousand firms\", not asked); gold chunk cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q04",
@@ -105,7 +105,7 @@
     ],
     "reason": "63.7% (2016) -> 58.4% (2018); gold chunk(s) cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q05",
@@ -138,7 +138,7 @@
     ],
     "reason": "All six options + digital economy; p22:p003 contains the list and the digital-tax sentence.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q06",
@@ -163,7 +163,7 @@
     ],
     "reason": "Eight sites, tied with Indonesia; gold chunk cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q07",
@@ -188,7 +188,7 @@
     ],
     "reason": "60% stated; gold chunk p39:p000 also has the 32.0/22.5/5.3 breakdown.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q08",
@@ -221,7 +221,7 @@
     ],
     "reason": "11.1 -> 10.2 days, shorter; extra ALOS-by-market figures match p40:p000.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q09",
@@ -246,7 +246,7 @@
     ],
     "reason": "870,000 by 2020 vs ~15,000 graduates/yr, shortfall; gold chunk cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q10",
@@ -279,7 +279,7 @@
     ],
     "reason": "54.1% -> 56.1% (+2.0 pp computed correctly); p41 text and Table 4 both support.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q11",
@@ -304,7 +304,7 @@
     ],
     "reason": "8.5% (y/y) first semester; gold chunk cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q12",
@@ -329,7 +329,7 @@
     ],
     "reason": "~US$16bn H1 2020, 15% lower than H1 2019; gold chunk cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q13",
@@ -362,7 +362,7 @@
     ],
     "reason": "US$8bn cash reserves, no need to borrow; p12:p004 supports \"without additional domestic or external borrowing\".",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q14",
@@ -387,7 +387,7 @@
     ],
     "reason": "57 countries; p20:p000 says \"only 57 countries with a positive GDP growth in 2020, down from 171\" (valid alternative source not listed in gold). Omits \"out of 191\".",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q15",
@@ -412,7 +412,7 @@
     ],
     "reason": "US +10.3%, China +17%; Japan -2.3%, EU -8.8%, other ASEAN -14.2%; gold chunk cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q16",
@@ -437,7 +437,7 @@
     ],
     "reason": "Gives 6.8% in Q1 2019 but omits the requested comparison with a year earlier (7.5% in Q1 2018). p16:p001 table supports 6.8%.",
     "answer_grade": 1,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q17",
@@ -470,7 +470,7 @@
     ],
     "reason": "2.8% baseline for 2020; p13 gold chunk and p40:p002 both state it.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q18",
@@ -495,7 +495,7 @@
     ],
     "reason": "~6% of GDP in 2020, back to 4-5% later; extra explanation matches p41:p001.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q19",
@@ -520,7 +520,7 @@
     ],
     "reason": "67th overall; gold chunk p37:p001 cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q20",
@@ -553,7 +553,7 @@
     ],
     "reason": "Yes; 1.57 -> 0.96 per 1,000 (2015->2017); extra 0.04 provincial figure from p49:p001 and domestic 0.17->0.11 from p49:p000 are correct.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q21",
@@ -578,7 +578,7 @@
     ],
     "reason": "18 (of 45) banks met Basel II CAR at end-May 2020; gold chunk cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "q22",
@@ -603,7 +603,7 @@
     ],
     "reason": "~8 million lost jobs, 17 million hours/income cut; gold chunk cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "u01",
@@ -636,7 +636,7 @@
     ],
     "reason": "Soft abstention: text correctly says no April 2020 cut is reported and lists Mar 17 (100bp) / May 12 (50bp), both citations supported. But the agent used the answer tool (status=answered), so per agent_metrics it is not a correct abstention.",
     "abstention_correct": false,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "u02",
@@ -650,7 +650,7 @@
     "citation_support": [],
     "reason": "Abstained with no claims; absence confirmed by corpus search (see absence_reason).",
     "abstention_correct": true,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   },
   {
     "query_id": "u03",
@@ -664,6 +664,6 @@
     "citation_support": [],
     "reason": "Abstained with no claims; absence confirmed by corpus search (see absence_reason).",
     "abstention_correct": true,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text; not independently re-graded by the student"
   }
 ]

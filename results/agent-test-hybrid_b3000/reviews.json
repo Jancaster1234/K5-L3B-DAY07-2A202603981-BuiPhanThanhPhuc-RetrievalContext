@@ -22,7 +22,7 @@
     ],
     "reason": "Nominal 7.4% and real ~3.9% in 2018; gold chunk p17:p000 cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
   },
   {
     "query_id": "t02",
@@ -45,9 +45,9 @@
     "citation_support": [
       true
     ],
-    "reason": "Numbers 0.27 vs 0.47 match p43:p001, but the source says \"0.27 cents per dollar\" and the answer rewrites it as \"$0.27 of each dollar\" (unit changed; plausible reading of a source typo). Student: decide 1 or 2.",
+    "reason": "Numbers 0.27 vs 0.47 match p43:p001, and the original PDF p43 also reads \"around 0.27 cents per dollar compared to an average of 0.47 cents\". The answer rewrites the unit as \"$0.27 of each dollar\"; BENCHMARK requires exact units, so graded 1 (partly correct).",
     "answer_grade": 1,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
   },
   {
     "query_id": "t03",
@@ -78,9 +78,9 @@
       true,
       false
     ],
-    "reason": "42% trained in tourism, 38% from other sectors, 20% no training - correct from p50:p000. Second citation p49:p002 is about labour productivity growth and does NOT support these figures (invalid citation).",
+    "reason": "42% trained in tourism, 38% from other sectors, 20% no training - correct from p50:p000. Second citation p49:p002 is about labour productivity growth and does NOT support these figures (invalid citation). Confirmed on original PDF: p49 contains no 42/38/20 percent figures.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
   },
   {
     "query_id": "t04",
@@ -105,7 +105,7 @@
     ],
     "reason": "4.3% of family businesses closed by June 2020; gold chunk p30:p001 cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
   },
   {
     "query_id": "t05",
@@ -130,7 +130,7 @@
     ],
     "reason": "+1.5 pp of GDP, ~US$4 billion injected; gold chunk p38:p001 cited.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
   },
   {
     "query_id": "t06",
@@ -163,7 +163,7 @@
     ],
     "reason": "6.6% (2019) and 6.5% (2021) under 2019-edition filter; p31:p000 text and p31:p001 Table I.1 both support.",
     "answer_grade": 2,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
   },
   {
     "query_id": "u04",
@@ -177,7 +177,7 @@
     "citation_support": [],
     "reason": "Abstained, no claims; absence confirmed by corpus search (absence_reason).",
     "abstention_correct": true,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
   },
   {
     "query_id": "u05",
@@ -191,7 +191,7 @@
     "citation_support": [],
     "reason": "Abstained, no claims; absence confirmed by corpus search (absence_reason).",
     "abstention_correct": true,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
   },
   {
     "query_id": "u06",
@@ -205,6 +205,6 @@
     "citation_support": [],
     "reason": "Abstained, no claims; absence confirmed by corpus search (absence_reason).",
     "abstention_correct": true,
-    "label_status": "DRAFT by Claude 2026-11-16 - student must verify against cited chunks"
+    "label_status": "Checked by Claude (AI) 2026-11-16 against cited chunk text AND original PDF page text; not independently re-graded by the student"
   }
 ]
