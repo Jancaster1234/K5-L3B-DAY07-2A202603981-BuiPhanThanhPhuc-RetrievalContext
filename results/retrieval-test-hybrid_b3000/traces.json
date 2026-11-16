@@ -1,0 +1,661 @@
+[
+  {
+    "query_id": "t01",
+    "split": "test",
+    "config": "hybrid_b3000",
+    "question": "By how much did the monthly average wage grow in 2018, in nominal and in real terms?",
+    "filter": null,
+    "strategy": "rrf(dense+bm25)",
+    "top_k": 3,
+    "budget_chars": 3000,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 17,
+        "evidence": "the monthly average wage is estimated to have expanded by 7.4 percent in nominal terms or by about 3.9 percent in real terms in 2018"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p17:p000",
+        "text": "I.8 Sustained and robust GDP growth continues to support a dynamic labor market with strong job creation and real wage growth. Job creation remains buoyant in high productivity sectors, such as manufacturing and services. Employment growth was strongest in manufacturing, which benefited from the expansion of production facilities, in particular of the FDI-dominated labor-intensive export sectors. Employment in the trade sector (retail and wholesale) also expanded, on the back of robust services growth related to private consumption. In contrast, employment in the agricultural sector continued to fall sharply, as more job seekers shifted to other sectors (figure I.7). Reflecting favorable labor market conditions, the monthly average wage is estimated to have expanded by 7.4 percent in nominal terms or by about 3.9 percent in real terms in 2018 (figure I.8).\n\nFigure I.7: Job creation by sector (net, thousand)\n\nFigure I.8: Monthly average wage (thousand dong)\n\nAgriculture\n\nMining",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 17,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 991,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.03252247488101534,
+        "rank": 1,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p17:p002",
+        "text": "I.9 Domestic demand presents a mixed picture in the first quarter 2019. On one hand, the growth in retail sales - a proxy for private consumption - rose 11.6 percent in nominal terms (about 8.6 percent in real terms) in the first five months of 2019, underpinned by moderate inflation and salary increases (figure 9). On the other hand, the pace of investment growth decelerated somewhat. Total investment outlays, which accounted for 32.2 percent of GDP in the first quarter of 2019, grew by 8.8 percent in nominal terms, compared to 10 percent in the first quarter of 2018 (figure I.10). The share of state investment (financed by both the state budget and loans to state-owned enterprises) in GDP declined to 9.6 percent in the first quarter, significantly below the average rate of 12 percent in 2014-18, reflecting ongoing implementation of fiscal consolidation.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 17,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 2086,
+          "chunking": "paragraph_max1000",
+          "char_start": 1219,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.03252247488101534,
+        "rank": 2,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 2
+        },
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p29:p002",
+        "text": "The urban unemployment rate also jumped by 33 percent, reaching almost 4.5 percent at the end of the second quarter, and the number of businesses closures reached almost 30,000 between January and June, which is one-third higher than recorded a year ago.9 Concurrently, the Government estimates that the average monthly revenue by worker declined by about 5 percent between the second quarter of 2019 and the same period in 2020, with a proportionally bigger impact on services (-7.3 percent) and industries (-5.1 percent) than on agriculture (-2.9 percent) (figure 14). The magnitude of the decline appears to be linked negatively to the worker's level of education and has been bigger for employers and informal workers than for wage employees.10 While these figures are relatively low by international standards, they are highly unusual for an economy that has been used to full employment over the past 25 years.11\n\nFigure 14: Average monthly income per person fell in the second quarter of 2020",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 29,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 2172,
+          "chunking": "paragraph_max1000",
+          "char_start": 1172,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.03149801587301587,
+        "rank": 3,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 3,
+          "bm25": 4
+        },
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p17:p000 | data/raw/taking-stock-2019-07.pdf | page 17]\nI.8 Sustained and robust GDP growth continues to support a dynamic labor market with strong job creation and real wage growth. Job creation remains buoyant in high productivity sectors, such as manufacturing and services. Employment growth was strongest in manufacturing, which benefited from the expansion of production facilities, in particular of the FDI-dominated labor-intensive export sectors. Employment in the trade sector (retail and wholesale) also expanded, on the back of robust services growth related to private consumption. In contrast, employment in the agricultural sector continued to fall sharply, as more job seekers shifted to other sectors (figure I.7). Reflecting favorable labor market conditions, the monthly average wage is estimated to have expanded by 7.4 percent in nominal terms or by about 3.9 percent in real terms in 2018 (figure I.8).\n\nFigure I.7: Job creation by sector (net, thousand)\n\nFigure I.8: Monthly average wage (thousand dong)\n\nAgriculture\n\nMining\n\n[ts-2019-07:p17:p002 | data/raw/taking-stock-2019-07.pdf | page 17]\nI.9 Domestic demand presents a mixed picture in the first quarter 2019. On one hand, the growth in retail sales - a proxy for private consumption - rose 11.6 percent in nominal terms (about 8.6 percent in real terms) in the first five months of 2019, underpinned by moderate inflation and salary increases (figure 9). On the other hand, the pace of investment growth decelerated somewhat. Total investment outlays, which accounted for 32.2 percent of GDP in the first quarter of 2019, grew by 8.8 percent in nominal terms, compared to 10 percent in the first quarter of 2018 (figure I.10). The share of state investment (financed by both the state budget and loans to state-owned enterprises) in GDP declined to 9.6 percent in the first quarter, significantly below the average rate of 12 percent in 2014-18, reflecting ongoing implementation of fiscal consolidation.",
+    "context_ids": [
+      "ts-2019-07:p17:p000",
+      "ts-2019-07:p17:p002"
+    ],
+    "context_chars": 1996,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": true,
+    "elapsed_ms": 75.59580000815913,
+    "usage": {
+      "BAAI/bge-small-en-v1.5": {
+        "calls": 1,
+        "input_tokens": 19,
+        "output_tokens": 0
+      }
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "t02",
+    "split": "test",
+    "config": "hybrid_b3000",
+    "question": "How much of each dollar spent by visitors leaks out of Vietnam's economy through imports, and how does this compare with the regional average?",
+    "filter": null,
+    "strategy": "rrf(dense+bm25)",
+    "top_k": 3,
+    "budget_chars": 3000,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 43,
+        "evidence": "this tourism leakage factor has been relatively low-around 0.27 cents per dollar compared to an average of 0.47 cents for the Southeast Asia region"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p43:p001",
+        "text": "II.16 In combination with the robust spending by domestic tourists, tourism's direct contribution to Vietnam's economy and employment has been rising steadily. For each dollar of direct visitor spending on tourism-linked activities (travel, accommodation, tour services), a portion goes toward imported goods and services (also known as spending \"leakage\"), meaning its direct contribution to GDP is generally less than one-for-one. In Vietnam, this tourism leakage factor has been relatively low-around 0.27 cents per dollar compared to an average of 0.47 cents for the Southeast Asia region29 -meaning a relatively large share of recent visitor spending growth has been retained in the domestic economy, helping to drive the tourism sector's contribution to GDP from 6 percent in 2013 to 7.9 percent in 2017 (Figure II.10).",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 43,
+        "metadata": {
+          "section": "II.3_tourism_economic_impacts",
+          "char_end": 1308,
+          "chunking": "paragraph_max1000",
+          "char_start": 483,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.03252247488101534,
+        "rank": 1,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 2
+        },
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p44:p000",
+        "text": "II.17 The multiplier effect of tourism spending on the total economy, however, is lower in Vietnam compared to regional and global averages. The World Travel and Tourism Council (WTTC) estimates that, in 2017, every 1 dollar of tourism spending in Vietnam that was retained in the domestic economy (i.e. did not leak abroad through imports) created an additional 0.6 dollars in income for the rest of the economy via (i) the additional indirect demand it generated for other economic sectors with backward and forward links to tourism, and (ii) the additional spending it induced among employees earning income in these linked sectors. This tourism GDP multiplier value of 1.6, however, is considerably smaller than elsewhere in developing Southeast Asia, where it averaged around 2.4 in 2017, and also lower than the global average for the tourism sector of 3.3 (Figure II.11).",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 44,
+        "metadata": {
+          "section": "II.3_tourism_economic_impacts",
+          "char_end": 878,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.03177805800756621,
+        "rank": 2,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 5,
+          "bm25": 1
+        },
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p46:p001",
+        "text": "II.20 In light of these generally-favorable economic impact dynamics of tourism spending in Vietnam, the recent decline in average daily visitor spending poses risks to the durability of tourism benefits. According to the GSO's tourist expenditure survey,31 which has been conducted every few years since 2003, the average daily spending per international visitor peaked in nominal terms in 2011, at US$106, and has since declined and leveled off at around US$96 (Figure II.15). However, given the continued depreciation of the Vietnamese dong vis-à-vis the U.S. dollar over the past decade (which raises visitors' local purchasing power per USD), and local price inflation (which erodes purchasing power), it is more instructive to look at the evolution of average expenditure adjusted for these two opposing effects. On this adjusted basis, average daily international visitor spending has been on a steady decline since 2003.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 46,
+        "metadata": {
+          "section": "II.3_tourism_economic_impacts",
+          "char_end": 1577,
+          "chunking": "paragraph_max1000",
+          "char_start": 649,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.03128054740957967,
+        "rank": 3,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 6
+        },
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p43:p001 | data/raw/taking-stock-2019-07.pdf | page 43]\nII.16 In combination with the robust spending by domestic tourists, tourism's direct contribution to Vietnam's economy and employment has been rising steadily. For each dollar of direct visitor spending on tourism-linked activities (travel, accommodation, tour services), a portion goes toward imported goods and services (also known as spending \"leakage\"), meaning its direct contribution to GDP is generally less than one-for-one. In Vietnam, this tourism leakage factor has been relatively low-around 0.27 cents per dollar compared to an average of 0.47 cents for the Southeast Asia region29 -meaning a relatively large share of recent visitor spending growth has been retained in the domestic economy, helping to drive the tourism sector's contribution to GDP from 6 percent in 2013 to 7.9 percent in 2017 (Figure II.10).\n\n[ts-2019-07:p44:p000 | data/raw/taking-stock-2019-07.pdf | page 44]\nII.17 The multiplier effect of tourism spending on the total economy, however, is lower in Vietnam compared to regional and global averages. The World Travel and Tourism Council (WTTC) estimates that, in 2017, every 1 dollar of tourism spending in Vietnam that was retained in the domestic economy (i.e. did not leak abroad through imports) created an additional 0.6 dollars in income for the rest of the economy via (i) the additional indirect demand it generated for other economic sectors with backward and forward links to tourism, and (ii) the additional spending it induced among employees earning income in these linked sectors. This tourism GDP multiplier value of 1.6, however, is considerably smaller than elsewhere in developing Southeast Asia, where it averaged around 2.4 in 2017, and also lower than the global average for the tourism sector of 3.3 (Figure II.11).\n\n[ts-2019-07:p46:p001 | data/raw/taking-stock-2019-07.pdf | page 46]\nII.20 In light of these generally-favorable economic impact dynamics of tourism spending in Vietnam, the recent decline in average daily visitor spending poses risks to the durability of tourism benefits. According to the GSO's tourist expenditure survey,31 which has been conducted every few years since 2003, the average daily spending per international visitor peaked in nominal terms in 2011, at US$106, and has since declined and leveled off at around US$96 (Figure II.15). However, given the continued depreciation of the Vietnamese dong vis-à-vis the U.S. dollar over the past decade (which raises visitors' local purchasing power per USD), and local price inflation (which erodes purchasing power), it is more instructive to look at the evolution of average expenditure adjusted for these two opposing effects. On this adjusted basis, average daily international visitor spending has been on a steady decline since 2003.",
+    "context_ids": [
+      "ts-2019-07:p43:p001",
+      "ts-2019-07:p44:p000",
+      "ts-2019-07:p46:p001"
+    ],
+    "context_chars": 2839,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": true,
+    "elapsed_ms": 77.01980002457276,
+    "usage": {
+      "BAAI/bge-small-en-v1.5": {
+        "calls": 1,
+        "input_tokens": 28,
+        "output_tokens": 0
+      }
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "t03",
+    "split": "test",
+    "config": "hybrid_b3000",
+    "question": "What share of workers in the tourism sector are trained specifically in tourism, and what about the rest?",
+    "filter": null,
+    "strategy": "rrf(dense+bm25)",
+    "top_k": 3,
+    "budget_chars": 3000,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 50,
+        "evidence": "only 42 percent of workers in the sector are trained specifically in tourism, whereas 38 percent have come from other sectors, and 20 percent have no official training"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p50:p000",
+        "text": "for the overall economy-resulting in a labor productivity level for the sector that is only 23 percent of the economy-wide average (in 2017), and among the lowest in Southeast Asia (Figure II.18). Furthermore, while economy-wide average real wages in Vietnam have grown broadly in line with real productivity over this period, the real wage-productivity growth gap in the tourism sector has increased (Figure II.18), suggesting persistent skills shortages and a bidding up of wages to attract skilled labor to the sector.36 Indeed, data from the Vietnam Association of Tourism Training show that only 42 percent of workers in the sector are trained specifically in tourism, whereas 38 percent have come from other sectors, and 20 percent have no official training.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 50,
+        "metadata": {
+          "section": "II.4_tourism_challenges",
+          "char_end": 764,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.03131881575727918,
+        "rank": 1,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 7,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p34:p000",
+        "text": "II.1 STRATEGIC CONTEXT\n\nII.1 The tourism sector is an important vehicle for economic growth, job creation and shared prosperity. As a source of foreign investment, tax revenue, and job creation, tourism offers an attractive source of export diversification away from primary and manufactured products. It is a labor-intensive and inclusive sector, which tends to employ more women and youth than most other sectors11 and creates significant opportunities for SMEs. Through its supply linkages to other sectors, tourism also has strong multiplier effects on the rest of the economy, generating jobs and income opportunities along its value chain. Moreover, tourism can be a tool to develop lagging regions and remote areas where opportunities for industrial development are often limited, thus contributing to increased shared prosperity.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 34,
+        "metadata": {
+          "section": "II.1_tourism_strategic_context",
+          "char_end": 837,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.030117753623188408,
+        "rank": 2,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 4,
+          "bm25": 9
+        },
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p49:p000",
+        "text": "Scarcity of tourism human resources\n\nII.26 The supply of tourism workers has been increasingly unable to keep up with the demands of the rapidly-growing sector. According to VNAT estimates, Vietnam's tourism sector directly employed around 750,000 workers in 2017, but will need roughly 870,000 workers by 2020 to keep up with demand growth, or 40,000 per year.35 However, current tourism schools churn out only around 15,000 graduates nationwide each year, a significant shortfall. This labor supply gap is most clearly seen in the growing shortage of qualified tour guides-in 2015, there were approximately 1.57 licensed tour guides per 1,000 international visitors, but this ratio has since fallen to 0.96 in 2017. For guides with licenses to tour domestic visitors, the ratio has similarly declined from 0.17 guides per 1,000 domestic visitors in 2014, to 0.11 in 2017.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 49,
+        "metadata": {
+          "section": "II.4_tourism_challenges",
+          "char_end": 873,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.03009207275993712,
+        "rank": 3,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 13
+        },
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p50:p000 | data/raw/taking-stock-2019-07.pdf | page 50]\nfor the overall economy-resulting in a labor productivity level for the sector that is only 23 percent of the economy-wide average (in 2017), and among the lowest in Southeast Asia (Figure II.18). Furthermore, while economy-wide average real wages in Vietnam have grown broadly in line with real productivity over this period, the real wage-productivity growth gap in the tourism sector has increased (Figure II.18), suggesting persistent skills shortages and a bidding up of wages to attract skilled labor to the sector.36 Indeed, data from the Vietnam Association of Tourism Training show that only 42 percent of workers in the sector are trained specifically in tourism, whereas 38 percent have come from other sectors, and 20 percent have no official training.\n\n[ts-2019-07:p34:p000 | data/raw/taking-stock-2019-07.pdf | page 34]\nII.1 STRATEGIC CONTEXT\n\nII.1 The tourism sector is an important vehicle for economic growth, job creation and shared prosperity. As a source of foreign investment, tax revenue, and job creation, tourism offers an attractive source of export diversification away from primary and manufactured products. It is a labor-intensive and inclusive sector, which tends to employ more women and youth than most other sectors11 and creates significant opportunities for SMEs. Through its supply linkages to other sectors, tourism also has strong multiplier effects on the rest of the economy, generating jobs and income opportunities along its value chain. Moreover, tourism can be a tool to develop lagging regions and remote areas where opportunities for industrial development are often limited, thus contributing to increased shared prosperity.\n\n[ts-2019-07:p49:p000 | data/raw/taking-stock-2019-07.pdf | page 49]\nScarcity of tourism human resources\n\nII.26 The supply of tourism workers has been increasingly unable to keep up with the demands of the rapidly-growing sector. According to VNAT estimates, Vietnam's tourism sector directly employed around 750,000 workers in 2017, but will need roughly 870,000 workers by 2020 to keep up with demand growth, or 40,000 per year.35 However, current tourism schools churn out only around 15,000 graduates nationwide each year, a significant shortfall. This labor supply gap is most clearly seen in the growing shortage of qualified tour guides-in 2015, there were approximately 1.57 licensed tour guides per 1,000 international visitors, but this ratio has since fallen to 0.96 in 2017. For guides with licenses to tour domestic visitors, the ratio has similarly declined from 0.17 guides per 1,000 domestic visitors in 2014, to 0.11 in 2017.",
+    "context_ids": [
+      "ts-2019-07:p50:p000",
+      "ts-2019-07:p34:p000",
+      "ts-2019-07:p49:p000"
+    ],
+    "context_chars": 2682,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": true,
+    "elapsed_ms": 74.50509996851906,
+    "usage": {
+      "BAAI/bge-small-en-v1.5": {
+        "calls": 1,
+        "input_tokens": 20,
+        "output_tokens": 0
+      }
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "t04",
+    "split": "test",
+    "config": "hybrid_b3000",
+    "question": "According to the household survey, what share of family businesses had closed temporarily or permanently by June 2020?",
+    "filter": null,
+    "strategy": "rrf(dense+bm25)",
+    "top_k": 3,
+    "budget_chars": 3000,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 30,
+        "evidence": "Only 4.3% of family businesses had closed temporarily or permanently"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p30:p001",
+        "text": "o Only 17% of respondents were affected negatively by a shock over the past month.\n\n2. Higher income loss for family businesses than for wage workers\n\no About 32% of family businesses have reported lower income in June compared to February\n\no Only 13% of heads of households who are wage earners had a lower income in June than in February.\n\n3. But this impact is likely to be temporary\n\no Only 2.3% of heads of households who worked in February were not working in June\n\no Among those still employed in wage jobs, 92% were working normally and with full normal\n\npayment by June\n\no Only 4.3% of family businesses had closed temporarily or permanently.\n\n4. Business as usual for most farms\n\no 90% of households in farming activities were able to operate normally by June\n\no Approximately 60% of farms were able to increase the value of their sales of rice in recent\n\nmonths.\n\n5. Little change in jobs and health services capital but remaining concerns on food security",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 30,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 1906,
+          "chunking": "paragraph_max1000",
+          "char_start": 939,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p31:p001",
+        "text": "Assistance outside family within the country\n\nAssistance from family within the country\n\nIncrease in price of farming/business inputs\n\nIncrease in price of major food items consumed\n\nHousehold business closure\n\nDisruption of farming, livestock, fishing activities\n\nFall in the price of farming/business output\n\nOthers (specify)\n\nReduced earnings from household business\n\nReduced salary/wage income\n\nJob loss\n\nShare of households (%)\n\nSource: Mobile Household Survey, June 2020.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 31,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 1453,
+          "chunking": "paragraph_max1000",
+          "char_start": 976,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.03225806451612903,
+        "rank": 2,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p30:p000",
+        "text": "since February, mainly caused by a job loss (25 percent) and a reduction in earnings from wages or family business (37 percent) (see figure 15). An interesting finding is that family businesses, while more affected than wage workers, have been quick to recover in the last two months. They have been both resilient and flexible because they have limited fixed costs as most of them do not pay rent and use only family members as employees. Once the social distancing restrictions were lifted, they were able to restart their activities almost immediately. These businesses account for over 90 percent of enterprises operating in Vietnam today.12\n\nBox 1. The pulse of the COVID-19 crisis as indicated by households in Vietnam\n\n1. While most households have been affected by the COVID crisis, the negative impact has been decreasing over time\n\no About 75% of households experienced a reduction in income at one point in time since February",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 30,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 937,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.031009615384615385,
+        "rank": 3,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 4,
+          "bm25": 5
+        },
+        "hit": false
+      }
+    ],
+    "context": "[ts-2020-07:p30:p001 | data/raw/taking-stock-2020-07.pdf | page 30]\no Only 17% of respondents were affected negatively by a shock over the past month.\n\n2. Higher income loss for family businesses than for wage workers\n\no About 32% of family businesses have reported lower income in June compared to February\n\no Only 13% of heads of households who are wage earners had a lower income in June than in February.\n\n3. But this impact is likely to be temporary\n\no Only 2.3% of heads of households who worked in February were not working in June\n\no Among those still employed in wage jobs, 92% were working normally and with full normal\n\npayment by June\n\no Only 4.3% of family businesses had closed temporarily or permanently.\n\n4. Business as usual for most farms\n\no 90% of households in farming activities were able to operate normally by June\n\no Approximately 60% of farms were able to increase the value of their sales of rice in recent\n\nmonths.\n\n5. Little change in jobs and health services capital but remaining concerns on food security\n\n[ts-2020-07:p31:p001 | data/raw/taking-stock-2020-07.pdf | page 31]\nAssistance outside family within the country\n\nAssistance from family within the country\n\nIncrease in price of farming/business inputs\n\nIncrease in price of major food items consumed\n\nHousehold business closure\n\nDisruption of farming, livestock, fishing activities\n\nFall in the price of farming/business output\n\nOthers (specify)\n\nReduced earnings from household business\n\nReduced salary/wage income\n\nJob loss\n\nShare of households (%)\n\nSource: Mobile Household Survey, June 2020.\n\n[ts-2020-07:p30:p000 | data/raw/taking-stock-2020-07.pdf | page 30]\nsince February, mainly caused by a job loss (25 percent) and a reduction in earnings from wages or family business (37 percent) (see figure 15). An interesting finding is that family businesses, while more affected than wage workers, have been quick to recover in the last two months. They have been both resilient and flexible because they have limited fixed costs as most of them do not pay rent and use only family members as employees. Once the social distancing restrictions were lifted, they were able to restart their activities almost immediately. These businesses account for over 90 percent of enterprises operating in Vietnam today.12\n\nBox 1. The pulse of the COVID-19 crisis as indicated by households in Vietnam\n\n1. While most households have been affected by the COVID crisis, the negative impact has been decreasing over time\n\no About 75% of households experienced a reduction in income at one point in time since February",
+    "context_ids": [
+      "ts-2020-07:p30:p001",
+      "ts-2020-07:p31:p001",
+      "ts-2020-07:p30:p000"
+    ],
+    "context_chars": 2589,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": true,
+    "elapsed_ms": 48.483100021258,
+    "usage": {
+      "BAAI/bge-small-en-v1.5": {
+        "calls": 1,
+        "input_tokens": 20,
+        "output_tokens": 0
+      }
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "t05",
+    "split": "test",
+    "config": "hybrid_b3000",
+    "question": "What would happen to public investment if the government raised the execution rate of the approved 2020 investment budget from 65 to 75 percent?",
+    "filter": null,
+    "strategy": "rrf(dense+bm25)",
+    "top_k": 3,
+    "budget_chars": 3000,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 38,
+        "evidence": "the ratio of public investment over GDP would rise by 1.5 percentage points of GDP, directly injecting around US$4 billion into the local economy"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p38:p001",
+        "text": "International Flights Domestic Flights\n\nSource: COVID-19 Observatory.\n\nThe second line of action should focus on fiscal policy, which is the conventional instrument for stimulating economic recovery in the immediate future. For Vietnam, such a policy would not necessarily mean to spend more, but rather to accelerate the execution of the already approved investment budget. To illustrate, if the government was able to increase the execution rate of the approved budget in 2020 from 65 to 75 percent, the ratio of public investment over GDP would rise by 1.5 percentage points of GDP, directly injecting around US$4 billion into the local economy.22 This would nonetheless require specific actions from the government to improve the management of the public investment program.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 38,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 1747,
+          "chunking": "paragraph_max1000",
+          "char_start": 969,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p41:p002",
+        "text": "In line with the expected short-term deterioration in the public deficit, public debt should increase from 54.1 to 56.1 percent of GDP between 2019 and 2020. This increase will be relatively limited because the government should be able to rely on its accumulated reserves to compensate for declining revenues and to finance additional spending. Subsequently, the government should return to its fiscal consolidation effort that will return the public debt-to-GDP ratio to the range of 55 percent during 2021-22. As in recent years, the government should rely on a combination of domestic and external borrowing to manage the risks associated to both the exchange rate and interest rate.\n\nManaging risks",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 41,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 1718,
+          "chunking": "paragraph_max1000",
+          "char_start": 1015,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.031754032258064516,
+        "rank": 2,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 4
+        },
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p38:p003",
+        "text": "21 \u0007The authorities could refer to a dashboard of three big data that could help them monitor the situation in almost real time and select the optimal set of countries, with a focus on those that are also relatively COVID-19 safe. For more detail, see Kaiser, Krishnan, and Morisset (2020).\n\n22 \u0007The acceleration of the execution of the investment program applies not only to the current budget but also to the backlog of projects that have accumulated in recent years. Although these unspent funds are all earmarked to specific investments, they are also fungible and could be used to substitute new borrowings by the government.\n\n23 See World Bank 2020c.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 38,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 3370,
+          "chunking": "paragraph_max1000",
+          "char_start": 2714,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.03076923076923077,
+        "rank": 3,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 5,
+          "bm25": 5
+        },
+        "hit": false
+      }
+    ],
+    "context": "[ts-2020-07:p38:p001 | data/raw/taking-stock-2020-07.pdf | page 38]\nInternational Flights Domestic Flights\n\nSource: COVID-19 Observatory.\n\nThe second line of action should focus on fiscal policy, which is the conventional instrument for stimulating economic recovery in the immediate future. For Vietnam, such a policy would not necessarily mean to spend more, but rather to accelerate the execution of the already approved investment budget. To illustrate, if the government was able to increase the execution rate of the approved budget in 2020 from 65 to 75 percent, the ratio of public investment over GDP would rise by 1.5 percentage points of GDP, directly injecting around US$4 billion into the local economy.22 This would nonetheless require specific actions from the government to improve the management of the public investment program.\n\n[ts-2020-07:p41:p002 | data/raw/taking-stock-2020-07.pdf | page 41]\nIn line with the expected short-term deterioration in the public deficit, public debt should increase from 54.1 to 56.1 percent of GDP between 2019 and 2020. This increase will be relatively limited because the government should be able to rely on its accumulated reserves to compensate for declining revenues and to finance additional spending. Subsequently, the government should return to its fiscal consolidation effort that will return the public debt-to-GDP ratio to the range of 55 percent during 2021-22. As in recent years, the government should rely on a combination of domestic and external borrowing to manage the risks associated to both the exchange rate and interest rate.\n\nManaging risks\n\n[ts-2020-07:p38:p003 | data/raw/taking-stock-2020-07.pdf | page 38]\n21 \u0007The authorities could refer to a dashboard of three big data that could help them monitor the situation in almost real time and select the optimal set of countries, with a focus on those that are also relatively COVID-19 safe. For more detail, see Kaiser, Krishnan, and Morisset (2020).\n\n22 \u0007The acceleration of the execution of the investment program applies not only to the current budget but also to the backlog of projects that have accumulated in recent years. Although these unspent funds are all earmarked to specific investments, they are also fungible and could be used to substitute new borrowings by the government.\n\n23 See World Bank 2020c.",
+    "context_ids": [
+      "ts-2020-07:p38:p001",
+      "ts-2020-07:p41:p002",
+      "ts-2020-07:p38:p003"
+    ],
+    "context_chars": 2345,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": true,
+    "elapsed_ms": 74.37149999896064,
+    "usage": {
+      "BAAI/bge-small-en-v1.5": {
+        "calls": 1,
+        "input_tokens": 25,
+        "output_tokens": 0
+      }
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "t06",
+    "split": "test",
+    "config": "hybrid_b3000",
+    "question": "What real GDP growth does the World Bank baseline forecast project for Vietnam for 2019 and for 2021?",
+    "filter": {
+      "edition_year": 2019
+    },
+    "strategy": "rrf(dense+bm25)",
+    "top_k": 3,
+    "budget_chars": 3000,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 31,
+        "evidence": "projects real GDP growth in Vietnam at 6.6 percent in 2019 and 6.5 percent in both 2020 and 2021"
+      },
+      {
+        "source_id": "ts-2019-07",
+        "page": 10,
+        "evidence": "with a slight deceleration to 6.5 percent in 2020 and 2021"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p31:p000",
+        "text": "I.3 MEDIUM-TERM OUTLOOK: PROSPECTS FOR A FURTHER MODERATION IN GROWTH AND RISKS TILTED TO THE DOWNSIDE\n\nI.33 Vietnam's medium-term growth trajectory is projected to remain stable, despite an expected gradual deceleration in 2019-21. In view of the moderation in economic activity in the first quarter of 2019 in Vietnam, subdued global growth and an escalation of trade tensions, the World Bank's baseline forecast projects real GDP growth in Vietnam at 6.6 percent in 2019 and 6.5 percent in both 2020 and 2021. Despite decelerating from the recent peak in 2018, growth robust growth is expected to support continued poverty reduction. While core inflation is expected to be contained by slower growth, further adjustments in administered prices (utility tariffs, health and education services) as well as the impact of swine fever and slower agricultural production on food prices will keep headline inflation at current levels but below the official inflation target of 4 percent.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 31,
+        "metadata": {
+          "section": "I.3_medium_term_outlook",
+          "char_end": 983,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p10:p000",
+        "text": "Outlook and risks\n\nDespite signs of cyclical moderation in growth, Vietnam's outlook remains positive. After peaking at 7.1 percent in 2018, real GDP growth in 2019 is projected to decelerate by 0.5 percentage points, led by weaker external demand and continued tightening of credit and fiscal policies. Nevertheless, real GDP growth is projected to remain robust with a slight deceleration to 6.5 percent in 2020 and 2021 (Table 1). While core inflation is expected to be contained by slower growth, further adjustments in administered prices (utility tariffs, health and education services) as well as the impact of swine fever and slower agricultural production on food prices will keep headline inflation at current levels but below the official inflation target of 4 percent. The current account surplus is expected to decline as a share of GDP, reflecting a significant fall-off in external demand.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 10,
+        "metadata": {
+          "section": "executive_summary",
+          "char_end": 904,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.031754032258064516,
+        "rank": 2,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 2,
+          "bm25": 4
+        },
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p16:p001",
+        "text": "Figure I.5: Economic growth decelerated in the first quarter\n\nQuarterly Real GDP growth (y/y, %)\n\nq1-15 q1-16 q1-17 q1-18 q1-19\n\nReal GDP growth by sector (supply side, y/y, %)\n\nq1-16 q1-17 q1-18 q1-19\n\nTotal GDP 5.5 5.1 7.5 6.8\n\nAgriculture -1.2 2.0 4.3 2.7\n\n\u0007Industry & construction 7.2 4.2 10.2 8.6\n\nManufacturing 8.9 8.6 14.3 12.4\n\nConstruction 9.9 6.1 7.5 6.7\n\nServices 6.0 6.6 6.4 6.5\n\nSource: GSO.\n\nI.7 Despite moderation, manufacturing and trade (wholesale and retail) continued to be the leading contributors to GDP growth in early-2019. The expansion of output in these two sectors combined contributed nearly half to overal GDP growth in the first quarter of 2019 (figure I.6). Manufacturing and retail trade accounted for 31 percent of Vietnam's GDP in real terms. The mining sector continues to face a structural slowdown, accounting for less than 6 percent of GDP in real terms, and negatively contributing (-0.13 percentage points) to the overall 6.8 percent increase in real GDP.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 16,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 1963,
+          "chunking": "paragraph_max1000",
+          "char_start": 968,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.03076923076923077,
+        "rank": 3,
+        "strategy": "rrf(dense+bm25)",
+        "component_ranks": {
+          "dense": 5,
+          "bm25": 5
+        },
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p31:p000 | data/raw/taking-stock-2019-07.pdf | page 31]\nI.3 MEDIUM-TERM OUTLOOK: PROSPECTS FOR A FURTHER MODERATION IN GROWTH AND RISKS TILTED TO THE DOWNSIDE\n\nI.33 Vietnam's medium-term growth trajectory is projected to remain stable, despite an expected gradual deceleration in 2019-21. In view of the moderation in economic activity in the first quarter of 2019 in Vietnam, subdued global growth and an escalation of trade tensions, the World Bank's baseline forecast projects real GDP growth in Vietnam at 6.6 percent in 2019 and 6.5 percent in both 2020 and 2021. Despite decelerating from the recent peak in 2018, growth robust growth is expected to support continued poverty reduction. While core inflation is expected to be contained by slower growth, further adjustments in administered prices (utility tariffs, health and education services) as well as the impact of swine fever and slower agricultural production on food prices will keep headline inflation at current levels but below the official inflation target of 4 percent.\n\n[ts-2019-07:p10:p000 | data/raw/taking-stock-2019-07.pdf | page 10]\nOutlook and risks\n\nDespite signs of cyclical moderation in growth, Vietnam's outlook remains positive. After peaking at 7.1 percent in 2018, real GDP growth in 2019 is projected to decelerate by 0.5 percentage points, led by weaker external demand and continued tightening of credit and fiscal policies. Nevertheless, real GDP growth is projected to remain robust with a slight deceleration to 6.5 percent in 2020 and 2021 (Table 1). While core inflation is expected to be contained by slower growth, further adjustments in administered prices (utility tariffs, health and education services) as well as the impact of swine fever and slower agricultural production on food prices will keep headline inflation at current levels but below the official inflation target of 4 percent. The current account surplus is expected to decline as a share of GDP, reflecting a significant fall-off in external demand.",
+    "context_ids": [
+      "ts-2019-07:p31:p000",
+      "ts-2019-07:p10:p000"
+    ],
+    "context_chars": 2025,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": true,
+    "elapsed_ms": 62.20649997703731,
+    "usage": {
+      "BAAI/bge-small-en-v1.5": {
+        "calls": 1,
+        "input_tokens": 19,
+        "output_tokens": 0
+      }
+    },
+    "cost_usd": 0.0
+  }
+]

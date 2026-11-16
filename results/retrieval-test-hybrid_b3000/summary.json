@@ -1,0 +1,36 @@
+{
+  "kind": "retrieval",
+  "config": "hybrid_b3000",
+  "method": "hybrid",
+  "strategy": "rrf(dense+bm25)",
+  "split": "test",
+  "top_k": 3,
+  "candidates": 20,
+  "budget_chars": 3000,
+  "hit1": {
+    "n": 6,
+    "N": 6,
+    "rate": 1.0
+  },
+  "evidence_hit3": {
+    "n": 6,
+    "N": 6,
+    "rate": 1.0
+  },
+  "mrr": 1.0,
+  "context_evidence_rate": {
+    "n": 6,
+    "N": 6,
+    "rate": 1.0
+  },
+  "avg_context_chars": 2412.6666666666665,
+  "median_ms": 74.43829998373985,
+  "cost_usd": 0.0,
+  "usage": {
+    "BAAI/bge-small-en-v1.5": {
+      "calls": 6,
+      "input_tokens": 131,
+      "output_tokens": 0
+    }
+  }
+}

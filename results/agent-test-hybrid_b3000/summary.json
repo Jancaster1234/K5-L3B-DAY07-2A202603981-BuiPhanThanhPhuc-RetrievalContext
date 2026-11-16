@@ -1,0 +1,56 @@
+{
+  "kind": "agent",
+  "config": "hybrid_b3000",
+  "method": "hybrid",
+  "split": "test",
+  "agent_model": "gpt-5-mini",
+  "top_k": 3,
+  "budget_chars": 3000,
+  "max_searches": 4,
+  "n": 9,
+  "status": {
+    "answered": 6,
+    "abstain": 3
+  },
+  "errors": [],
+  "tool_use": {
+    "n": 9,
+    "N": 9,
+    "rate": 1.0
+  },
+  "searches_distribution": {
+    "1": 3,
+    "2": 1,
+    "4": 5
+  },
+  "context_evidence_rate_auto": {
+    "n": 6,
+    "N": 6,
+    "rate": 1.0
+  },
+  "answered_on_answerable": {
+    "n": 6,
+    "N": 6,
+    "rate": 1.0
+  },
+  "abstained_on_unanswerable": {
+    "n": 3,
+    "N": 3,
+    "rate": 1.0
+  },
+  "median_elapsed_s": 8.677326000004541,
+  "cost_usd": 0.014399249999999999,
+  "usage": {
+    "gpt-5-mini": {
+      "calls": 34,
+      "input_tokens": 32533,
+      "output_tokens": 3133
+    },
+    "BAAI/bge-small-en-v1.5": {
+      "calls": 25,
+      "input_tokens": 815,
+      "output_tokens": 0
+    }
+  },
+  "note": "Số tự động; grounded answer/citation/abstention phải lấy từ reviews.json + starter/agent_metrics.py"
+}

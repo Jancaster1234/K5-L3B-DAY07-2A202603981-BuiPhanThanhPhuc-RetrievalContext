@@ -1,0 +1,36 @@
+{
+  "kind": "retrieval",
+  "config": "dense",
+  "method": "dense",
+  "strategy": "dense",
+  "split": "test",
+  "top_k": 3,
+  "candidates": 20,
+  "budget_chars": 800,
+  "hit1": {
+    "n": 4,
+    "N": 6,
+    "rate": 0.6666666666666666
+  },
+  "evidence_hit3": {
+    "n": 5,
+    "N": 6,
+    "rate": 0.8333333333333334
+  },
+  "mrr": 0.75,
+  "context_evidence_rate": {
+    "n": 0,
+    "N": 6,
+    "rate": 0.0
+  },
+  "avg_context_chars": 320.8333333333333,
+  "median_ms": 57.08434997359291,
+  "cost_usd": 0.0,
+  "usage": {
+    "BAAI/bge-small-en-v1.5": {
+      "calls": 6,
+      "input_tokens": 131,
+      "output_tokens": 0
+    }
+  }
+}
