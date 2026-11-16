@@ -1,6 +1,7 @@
 # Báo cáo Day 7 — Bùi Phan Thanh Phúc (2A202603981)
 
 **Slide trình bày:** <https://claude.ai/artifact/DYSgXZo1P3w3JbpbmEs8nc> (12 slide: dữ liệu, thử nghiệm dev, cấu hình chọn, kết quả test và ba ví dụ bắt buộc — trả lời có bằng chứng t04, từ chối đúng u05, lỗi u01/t01).
+**Demo tương tác:** <https://claude.ai/artifact/VVahhwyrw7jEf676CrHKUU> — phát lại từng bước trace thật của agent (query, chunk tìm được, context budget, câu trả lời, nhãn chấm) cho baseline và cấu hình đã chọn.
 
 > **Cách chấm nhãn (minh bạch):** nhãn trong `results/*/reviews.json` do trợ lý AI (Claude Code) chấm theo BENCHMARK.md, đọc từng câu trả lời với chunk được trích dẫn, sau đó **đối chiếu lại với PDF gốc** (văn bản trang PDF qua PyMuPDF) cho toàn bộ 9 câu test: mọi con số trong câu trả lời có trên đúng trang; citation `p49:p002` của t03 xác nhận không hỗ trợ; câu thiếu evidence được tìm trên **toàn bộ trang vật lý** của hai PDF. Học viên đã **tự kiểm tra các trường hợp cần phán đoán** — t02 (đổi đơn vị "cents" → "$", chấm 1), t03 (citation `p49:p002` không hỗ trợ), q14 (nguồn thay thế p20), q16 (thiếu so sánh với năm trước, chấm 1) — bằng cách đọc `cited_chunks` và đồng ý với nhãn; các câu còn lại không được học viên chấm lại độc lập. Người chấm có thể kiểm tra lại qua trường `reason`, `cited_chunks` và `label_status` trong từng file.
 

@@ -1,6 +1,6 @@
 # Code Day 7 — Agentic RAG trên vector store Day 6
 
-Báo cáo: [report/individual/2A202603981_BuiPhanThanhPhuc.md](../report/individual/2A202603981_BuiPhanThanhPhuc.md) · Slide trình bày: <https://claude.ai/artifact/DYSgXZo1P3w3JbpbmEs8nc>
+Báo cáo: [report/individual/2A202603981_BuiPhanThanhPhuc.md](../report/individual/2A202603981_BuiPhanThanhPhuc.md) · Slide trình bày: <https://claude.ai/artifact/DYSgXZo1P3w3JbpbmEs8nc> · Demo tương tác: <https://claude.ai/artifact/VVahhwyrw7jEf676CrHKUU>
 
 Chạy từ thư mục gốc repo, Python 3.11+ (đã chạy với 3.12.0, Windows 10). Trên Windows dùng `python -X utf8`: test `tests/test_baseline.py` của starter đọc file không chỉ định encoding nên lỗi với cp1252.
 
