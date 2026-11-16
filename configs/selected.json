@@ -1,0 +1,17 @@
+{
+  "extends": "base.json",
+  "name": "hybrid_b3000",
+  "method": "hybrid",
+  "budget": 3000,
+  "_selection": {
+    "locked_on": "2026-11-16, before any test-split run",
+    "rule": "Chosen on dev only, in this order: (1) Context Evidence Rate, (2) grounded-answer mean, (3) abstention on unanswerable, (4) cost/time.",
+    "dev_evidence": {
+      "hybrid_b3000": "retrieval CER 22/22; agent context evidence 20/22; grounded mean 1.95 (0/1/21); abstention 2/3; false abstention 0/22; $0.042",
+      "hybrid_b3000_strict": "retrieval CER 22/22; agent context evidence 19/22; grounded mean 1.77 (2/1/19); abstention 3/3; false abstention 2/22; $0.038",
+      "dense_b3000": "retrieval CER 18/22; agent answered 19/22; abstention 3/3; $0.046",
+      "dense (baseline)": "retrieval CER 7/22; agent answered 9/22; abstention 2/3; $0.031"
+    },
+    "baseline_for_test": "configs/dense.json"
+  }
+}

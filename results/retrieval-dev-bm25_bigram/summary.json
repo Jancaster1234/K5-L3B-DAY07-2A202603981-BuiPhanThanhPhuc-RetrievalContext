@@ -1,0 +1,30 @@
+{
+  "kind": "retrieval",
+  "config": "bm25_bigram",
+  "method": "bm25",
+  "strategy": "bm25",
+  "split": "dev",
+  "top_k": 3,
+  "candidates": 20,
+  "budget_chars": 800,
+  "hit1": {
+    "n": 15,
+    "N": 22,
+    "rate": 0.6818181818181818
+  },
+  "evidence_hit3": {
+    "n": 20,
+    "N": 22,
+    "rate": 0.9090909090909091
+  },
+  "mrr": 0.7954545454545454,
+  "context_evidence_rate": {
+    "n": 8,
+    "N": 22,
+    "rate": 0.36363636363636365
+  },
+  "avg_context_chars": 527.3181818181819,
+  "median_ms": 3.7995999737177044,
+  "cost_usd": 0.0,
+  "usage": {}
+}

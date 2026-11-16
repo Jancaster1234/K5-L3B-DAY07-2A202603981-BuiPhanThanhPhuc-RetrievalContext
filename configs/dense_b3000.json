@@ -1,0 +1,1 @@
+{"extends": "base.json", "name": "dense_b3000", "method": "dense", "budget": 3000}

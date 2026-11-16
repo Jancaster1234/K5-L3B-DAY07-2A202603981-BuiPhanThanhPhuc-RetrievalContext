@@ -1,0 +1,13 @@
+{
+  "store": {"type": "pgvector", "strategy": "B", "url_env": "DATABASE_URL"},
+  "questions_path": "data/benchmark.json",
+  "embedding_provider": "local",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "cache_dir": "cache",
+  "agent_model": "gpt-5-mini",
+  "rerank_model": "gpt-5-mini",
+  "reasoning_effort": "low",
+  "top_k": 3,
+  "budget": 800,
+  "max_searches": 4
+}

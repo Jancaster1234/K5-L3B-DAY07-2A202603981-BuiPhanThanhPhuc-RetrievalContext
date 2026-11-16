@@ -1,0 +1,1 @@
+{"extends": "base.json", "name": "hybrid_b3000_strict", "method": "hybrid", "budget": 3000, "prompt": "strict"}

@@ -1,0 +1,1 @@
+{"extends": "base.json", "name": "bm25", "method": "bm25"}

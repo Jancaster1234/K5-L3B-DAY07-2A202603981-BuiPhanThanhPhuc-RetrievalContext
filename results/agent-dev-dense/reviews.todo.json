@@ -1,0 +1,437 @@
+[
+  {
+    "query_id": "q01",
+    "answerable": true,
+    "status": "abstain",
+    "question": "By how much is global GDP expected to contract in 2020 because of COVID-19?",
+    "expected": "About 5.2 percent (World Bank baseline, deepest global recession in eight decades).",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q02",
+    "answerable": true,
+    "status": "answered",
+    "question": "What headline inflation rate does the report give for the most recent month, and how does it compare with January?",
+    "expected": "Headline CPI rose 2.9 percent y/y in May 2019, up slightly from 2.6 percent in January 2019.",
+    "answer": "Headline CPI was 2.9 percent (y/y) in the most recent month (May 2019), up slightly from 2.6 percent in January 2019 [ts-2019-07:p9:p002].",
+    "citations": [
+      "ts-2019-07:p9:p002"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2019-07:p9:p002",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 9,
+        "text": "In contrast, service sector activity continues relatively strong, signaling sustained buoyancy in private consumption.\n\nDespite a recent uptick in headline inflation, price pressures have remained subdued as credit growth moderated. The headline CPI rose by 2.9 percent (y/y) in May 2019, up slightly from 2.6 percent in January 2019, driven by hikes in administered prices (for electricity and fuel) and moderate food price increases. The State Bank of Vietnam maintained a prudent monetary policy stance to support its twin goals of sustaining macroeconomic stability and supporting overall economic growth. Credit growth is estimated to have slowed to about 13 percent (y/y) in March 2019 reflecting tighter credit policies."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q03",
+    "answerable": true,
+    "status": "answered",
+    "question": "What share of Vietnam's domestic firms are small and micro enterprises?",
+    "expected": "98 percent of around 500 thousand domestic firms.",
+    "answer": "98 percent of Vietnam's domestic firms are small and microenterprises [ts-2019-07:p19:p000].",
+    "citations": [
+      "ts-2019-07:p19:p000"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2019-07:p19:p000",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 19,
+        "text": "I.11 The domestic private sector is dominated by micro and small enterprises (MSEs). Out of around 500 thousand existing domestic firms, 98 percent are small and microenterprises5. While these enterprises create the vast majority of jobs in the economy, many operate in relatively low productivity services (small retail, restaurants) and simple manufacturing. Most are focused on the domestic markets and few of these businesses are engaged in export activities. They often lack the scale, access to finance and technology to make them efficient producers."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q04",
+    "answerable": true,
+    "status": "answered",
+    "question": "From what peak level has the ratio of government debt to output come down, and to what level?",
+    "expected": "From a peak of 63.7 percent of GDP in 2016 to an estimated 58.4 percent in 2018 (MOF definition).",
+    "answer": "The ratio of government (public) debt to output fell from a peak of 63.7 percent in 2016 to an estimated 58.4 percent in 2018 [ts-2019-07:p9:p003].",
+    "citations": [
+      "ts-2019-07:p9:p003"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2019-07:p9:p003",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 9,
+        "text": "Sustained fiscal discipline and robust growth supported a further decline in Vietnam's public debt-to-GDP ratio. The public debt-to-GDP-ratio has fallen from a peak of 63.7 percent in 2016 to an estimated 58.4 in 2018, based on the Ministry of Finance's definition, and is on track to continue to decline and remain below the legislated debt-ceiling of 65 percent. Taking advantage of favorable domestic market conditions, rising investor confidence and lower yields, the government has continued to shift into longerdated domestic debt instruments, while also reduced the average interest rate."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q05",
+    "answerable": true,
+    "status": "answered",
+    "question": "Which tax policy options are proposed to strengthen revenue mobilization?",
+    "expected": "Broadening the VAT base; broadening the CIT base and reviewing incentives; raising excise rates; expanding the PIT base; a modern property tax; rationalizing natural resource/environment revenue policies (and possibly taxing the digital economy).",
+    "answer": "Proposed tax policy options include: (1) taxing digital transactions indirectly by requiring suppliers to collect GST/SST; (2) taxing digital transactions directly by redefining permanent establishment rules; (3) expanding the existing tax on technical services; and (4) establishing a new, freestanding tax on income from digital transactions [ts-2019-07:p23:p003].",
+    "citations": [
+      "ts-2019-07:p23:p003"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2019-07:p23:p003",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 23,
+        "text": "Malaysia is considering four main options for taxing digital goods and services provided by non-resident companies taxing digital transactions indirectly, by requiring suppliers to collect GST/SST in line with international practice; or directly, by redefining its permanent establishment rules, expanding its existing tax on technical services, or establishing a new, freestanding tax on the income from digital transactions. Each option has advantages and disadvantages, and some are being considered to be adopted in parallel.\n\nImproved External Position Despite Ongoing Uncertainty"
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q06",
+    "answerable": true,
+    "status": "answered",
+    "question": "How many World Heritage sites does Vietnam have, and how does that compare with its Southeast Asian neighbours?",
+    "expected": "Eight UNESCO World Heritage sites, tied with Indonesia for the most in Southeast Asia.",
+    "answer": "Vietnam has eight UNESCO World Heritage sites, tied with Indonesia for the most of any country in Southeast Asia [ts-2019-07:p34:p002].",
+    "citations": [
+      "ts-2019-07:p34:p002"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2019-07:p34:p002",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 34,
+        "text": "II.3 Vietnam, with its diverse natural and cultural tourism assets, is especially poised to benefit from this favorable demand landscape. According to the World Economic Forum's (WEF) latest 2017 Tourism Competitiveness Index, Vietnam ranks 32nd globally (out of 120 countries) in terms of the volume and attractiveness of its natural and cultural resources, and 3rd within the Southeast Asia region (behind Indonesia and Thailand). Notably, Vietnam is home to eight UNESCO World Heritage sites, tied with Indonesia for the most of any country in Southeast Asia. The country also features premier urban tourism destinations, such as Hanoi, Ho Chi Minh City, and Da Nang."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q07",
+    "answerable": true,
+    "status": "abstain",
+    "question": "What share of Vietnam's international arrivals in 2018 came from China, South Korea and Japan combined?",
+    "expected": "60 percent.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q08",
+    "answerable": true,
+    "status": "abstain",
+    "question": "How long do foreign tourists typically stay in Vietnam, and has their stay been getting longer or shorter?",
+    "expected": "Shorter: average length of stay fell from 11.1 days in 2013 to 10.2 days in 2017.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q09",
+    "answerable": true,
+    "status": "abstain",
+    "question": "How many tourism workers will Vietnam need by 2020, and can tourism schools supply enough graduates?",
+    "expected": "About 870,000 workers by 2020 (40,000 more per year, from ~750,000 in 2017), but schools produce only ~15,000 graduates a year, a significant shortfall.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q10",
+    "answerable": true,
+    "status": "answered",
+    "question": "By how much is public debt as a share of GDP expected to change between 2019 and 2020?",
+    "expected": "It should rise from 54.1 to 56.1 percent of GDP.",
+    "answer": "Public debt is expected to increase by 2.0 percentage points, from 54.1 to 56.1 percent of GDP between 2019 and 2020 [ts-2020-07:p41:p002].",
+    "citations": [
+      "ts-2020-07:p41:p002"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2020-07:p41:p002",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 41,
+        "text": "In line with the expected short-term deterioration in the public deficit, public debt should increase from 54.1 to 56.1 percent of GDP between 2019 and 2020. This increase will be relatively limited because the government should be able to rely on its accumulated reserves to compensate for declining revenues and to finance additional spending. Subsequently, the government should return to its fiscal consolidation effort that will return the public debt-to-GDP ratio to the range of 55 percent during 2021-22. As in recent years, the government should rely on a combination of domestic and external borrowing to manage the risks associated to both the exchange rate and interest rate.\n\nManaging risks"
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q11",
+    "answerable": true,
+    "status": "abstain",
+    "question": "What rate of credit growth does the report record for the latest period?",
+    "expected": "Credit expansion of 8.5 percent (y/y) during the first semester of 2020.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q12",
+    "answerable": true,
+    "status": "abstain",
+    "question": "How much committed foreign direct investment did Vietnam attract in the first half of 2020, and how did it compare with a year earlier?",
+    "expected": "Close to US$16 billion, 15 percent lower than in the same period of 2019.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q13",
+    "answerable": true,
+    "status": "abstain",
+    "question": "Why did the government not need to borrow to respond to the pandemic shock?",
+    "expected": "Prudent fiscal policy built cash reserves of about US$8 billion by end-2019, so there was no pressing need to borrow domestically or internationally.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q14",
+    "answerable": true,
+    "status": "answered",
+    "question": "How many countries are expected to increase their GDP from 2019 to 2020?",
+    "expected": "Only 57 out of 191 countries, down from 171 a year earlier.",
+    "answer": "57 countries are expected to increase their GDP from 2019 to 2020 [ts-2020-07:p20:p000].",
+    "citations": [
+      "ts-2020-07:p20:p000"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2020-07:p20:p000",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 20,
+        "text": "The global contraction affects all countries covered by the World Bank's forecast. As of early July, the prediction is that there will be only 57 countries with a positive GDP growth in 2020, down from 171 in 2019. Almost all regions will be in negative territory, with a more pronounced decline in the Euro Area (-9.1 percent) followed by the United States (-6.9 percent) and emerging markets (-2.1). East Asia will still grow but only by 0.5 percent - or 5.5 percentage points lower than the rate achieved by the region in 2019."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q15",
+    "answerable": true,
+    "status": "abstain",
+    "question": "Which export destination markets grew and which declined in the first six months of 2020?",
+    "expected": "Exports grew to the United States (+10.3%) and China (+17%) but fell to Japan (-2.3%), the EU (-8.8%) and other ASEAN countries (-14.2%).",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q16",
+    "answerable": true,
+    "status": "abstain",
+    "question": "How fast did Vietnam's real GDP grow in the most recent quarter covered by the report, compared with a year earlier?",
+    "expected": "6.8 percent in Q1 2019, down from 7.5 percent in Q1 2018.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q17",
+    "answerable": true,
+    "status": "answered",
+    "question": "What GDP growth rate is projected for Vietnam for the whole of 2020 in the baseline scenario?",
+    "expected": "Around 2.8 percent.",
+    "answer": "Vietnam’s GDP is projected to grow around 2.8 percent for the entire year of 2020 in the baseline scenario [ts-2020-07:p13:p001].",
+    "citations": [
+      "ts-2020-07:p13:p001"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2020-07:p13:p001",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 13,
+        "text": "Although the Vietnamese economy suffered from COVID-19 in the first semester of 2020, prospects remain positive for both the short and medium term. Assuming a gradual improvement in the world economy, GDP should rebound in the second semester of 2020 so that the economy will grow around 2.8 percent for the entire year. It should further expand by 6.8 percent in 2021 (baseline scenario). With less favorable external conditions, the economy will expand by only 1.5 percent in 2020 and 4.5 percent in 2021 (downside scenario). Regardless of scenario, Vietnam is expected to remain one of the fastest-growing economies in the world in 2020."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q18",
+    "answerable": true,
+    "status": "answered",
+    "question": "How large is the fiscal deficit expected to be in 2020, and what happens afterwards?",
+    "expected": "Approximately 6 percent of GDP in 2020, returning to 4-5 percent in subsequent years.",
+    "answer": "The fiscal deficit should reach approximately 6 percent of GDP in 2020, before returning to 4 to 5 percent levels in subsequent years as revenue picks up and stimulus spending declines [ts-2020-07:p41:p001].",
+    "citations": [
+      "ts-2020-07:p41:p001"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2020-07:p41:p001",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 41,
+        "text": "The fiscal deficit should temporarily worsen due to the slowdown of the economy and the government's policy response to the COVID-19 crisis. It should reach approximately 6 percent of GDP in 2020 before returning to 4 to 5 percent levels in subsequent years, when the authorities will be able to return to their commitment of prudent and sustainable fiscal policy. The deterioration should be temporary, as revenue should pick up again when the economy gradually rebounds in the next few years. Stimulus spending should also decline gradually as the result of the expected economic recovery in 2021 and 2022."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "answer_grade": null
+  },
+  {
+    "query_id": "q19",
+    "answerable": true,
+    "status": "abstain",
+    "question": "What was Vietnam's overall ranking in the 2017 WEF Tourism Competitiveness Index (not the natural and cultural resources pillar)?",
+    "expected": "67th globally (it ranked 32nd only on natural and cultural resources).",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q20",
+    "answerable": true,
+    "status": "abstain",
+    "question": "Is there a shortage of licensed tour guides for international visitors, and how has the guide-to-visitor ratio changed?",
+    "expected": "Yes: about 1.57 licensed guides per 1,000 international visitors in 2015, falling to 0.96 in 2017.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q21",
+    "answerable": true,
+    "status": "abstain",
+    "question": "How many Vietnamese banks met the Basel II capital adequacy requirement at end-May 2020?",
+    "expected": "Only 18 of 45 banks.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q22",
+    "answerable": true,
+    "status": "abstain",
+    "question": "According to the labour ministry, how many workers lost their jobs or had their hours or income cut during the pandemic?",
+    "expected": "About 8 million workers lost their jobs at some point and another 17 million had working hours or income cut (MOLISA).",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "u01",
+    "answerable": false,
+    "status": "answered",
+    "question": "By how many basis points did the State Bank of Vietnam cut its policy rate in April 2020?",
+    "expected": "Near miss. The only rate cuts with sizes are in the 2020 timeline (p23): Mar 17, 2020 (100 basis points) and May 12, 2020 (50 basis points). No April 2020 cut is reported; searched 'basis point', 'policy rate', 'refinanc' over all 81 pages.",
+    "answer": "The State Bank of Vietnam cut its policy rate by 50 basis points in April 2020 [ts-2020-07:p23:p002].",
+    "citations": [
+      "ts-2020-07:p23:p002"
+    ],
+    "cited_chunks": [
+      {
+        "id": "ts-2020-07:p23:p002",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 23,
+        "text": "Apr 23, 2020 Government eased social distancing but continued cross-border entry restrictions\n\nMay 1, 2020 Government resumed rice exports\n\nMay 11, 2020 All schools reopened and most economic and social activities resumed nationwide\n\nMay 12, 2020 State Bank of Vietnam cut policy rate by 50 basis points\n\nMay 14, 2020 Vietnam confirmed 300th case\n\nJuly 21, 2020 Vietnam confirmed 396 infected cases of which 360 cases have been discharged. All new cases in the last 96 days come from Vietnamese repatriated from abroad and foreigners arrived in Vietnam. No deaths so far!\n\nSource: World Bank."
+      }
+    ],
+    "citation_support": [
+      null
+    ],
+    "reason": "",
+    "abstention_correct": null
+  },
+  {
+    "query_id": "u02",
+    "answerable": false,
+    "status": "abstain",
+    "question": "What is the electricity price per kWh after the 2019 power tariff increase?",
+    "expected": "The 2019 edition mentions a hike in the power tariff (p19) and electricity in administered prices (p9), but gives no price level. 'kWh' has 0 hits in all 81 pages.",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "abstention_correct": null
+  },
+  {
+    "query_id": "u03",
+    "answerable": false,
+    "status": "abstain",
+    "question": "How much is the entrance fee for visiting Hoi An Ancient City?",
+    "expected": "p54 (2019) only says entrance fees are charged in Hoi An Ancient City as an example of tiered pricing; no amount is given anywhere ('entrance fee' 2 hits, both p54, no number).",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "cited_chunks": [],
+    "citation_support": [],
+    "reason": "",
+    "abstention_correct": null
+  }
+]

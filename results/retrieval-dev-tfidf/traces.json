@@ -1,0 +1,1980 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "By how much is global GDP expected to contract in 2020 because of COVID-19?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 11,
+        "evidence": "Global GDP is expected to decline by 5.2 percent in 2020"
+      },
+      {
+        "source_id": "ts-2020-07",
+        "page": 19,
+        "evidence": "envisions a 5.2 percent contraction in global GDP in 2020"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p11:p003",
+        "text": "The global economy has entered into its worst recession in recent decades. Global GDP is expected to decline by 5.2 percent in 2020 as the result of the COVID-19 pandemic and the associated measures taken to contain it over time. Today, it is estimated that over half a million people have already died from the coronavirus, and 10 million have been infected worldwide - and these figures are mounting every day.\n\nNot only is the world facing its worst recession, but almost all countries are expected to be negatively affected by the impact of the pandemic. With the exception of East Asia, all regions will report negative GDP growth rates in 2020. Similarly, only 57 out of 191 countries are expected to increase their GDP from 2019 to 2020, down from 171 a year ago.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 11,
+        "metadata": {
+          "section": "key_messages",
+          "char_end": 2829,
+          "chunking": "paragraph_max1000",
+          "char_start": 2059,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.2243061034654563,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p18:p001",
+        "text": "The report has four sections. The first sets the stage by briefly describing how the COVID-19 pandemic has changed the world economy, building on the World Bank's June 2020 Global Economic Prospects report. The second section emphasizes how Vietnam has not only managed the health crisis exceptionally well but has also coped with the economic consequences. The third section discusses what the short- to medium-term prospects are for the Vietnamese economy, exploring how to jump start and maintain the recovery in a weak and uncertain global environment. The fourth and last section examines how Vietnam can build on various megatrends emerging in the global economy to accelerate the implementation of its policy agenda and become a high-income economy in the longer term.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 18,
+        "metadata": {
+          "section": "introduction",
+          "char_end": 1375,
+          "chunking": "paragraph_max1000",
+          "char_start": 600,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.20039475662606937,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p40:p003",
+        "text": "During 2021-22, the Vietnamese economy is expected to return gradually to its historical GDP expansion of approximately 6 to 7 percent per year, as foreign demand should pick up in the main industrial countries. Over the next few years, Vietnam is expected to continue to benefit from trade and investment diversions thanks to its adhesion to various global and regional agreements, including the EU-Vietnam Free Trade Agreement (EVFTA) in June 2020.\n\nMost financial variables will remain under control in 2020, especially the inflation rate, which is expected to remain under 4 percent during 2020-22. The SBV should adjust monetary expansion to the expected growth rate of the economy to contain potential pressure on domestic prices over time. Food and energy prices - two important items in the Consumer Price Index - should not see large increases in the absence of disruption in their supply chains or deterioration in climatic conditions.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 40,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 3004,
+          "chunking": "paragraph_max1000",
+          "char_start": 2058,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.1755634807708851,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "context_chars": 0,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 2.4187000235542655,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "What headline inflation rate does the report give for the most recent month, and how does it compare with January?",
+    "filter": {
+      "edition_year": 2019
+    },
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 19,
+        "evidence": "The headline CPI rose by 2.9 percent (y/y) in May 2019, up slightly from 2.6 percent in January 2019"
+      },
+      {
+        "source_id": "ts-2019-07",
+        "page": 9,
+        "evidence": "The headline CPI rose by 2.9 percent (y/y) in May 2019, up slightly from 2.6 percent in January 2019"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p19:p003",
+        "text": "I.13 Despite a recent uptick in headline inflation, price pressures are expected to remain subdued in the short run. Vietnam's consumer price index has ticked up slightly in the first five months of 2019, driven by hikes in administered prices (for electricity and fuel). The headline CPI rose by 2.9 percent (y/y) in May 2019, up slightly from 2.6 percent in January 2019, and is attributed to moderate food price increases. Over the same period, core inflation ticked up slightly to 1.9 percent from 1.7 percent in December 2018, still below 2 percent, as has been the case since June 2015 (figure I.13). Nevertheless, modest inflationary pressures have emerged, due to the aforementioned hike in the power tariff and fuel prices as well as to a planned increase in administrative prices for healthcare and education.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 19,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 2775,
+          "chunking": "paragraph_max1000",
+          "char_start": 1956,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.13018434161496256,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p57:p000",
+        "text": "BOX II.1 Crossing the tipping point-some cautionary tales\n\nIn recent years, environmental pollution and damage related to uncontrolled tourism growth has forced several popular destinations in the East Asia and Pacific region to take extreme measures to deal with the resulting fallout, including, in some cases, temporarily closing off to visitors. The resulting economic loss (due to both foregone tourism revenue and the cost of remedial measures) serves as a cautionary example of the potential consequences Vietnam could face if it does not proactively and effectively address the threats posed by continued rapid tourism growth.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 57,
+        "metadata": {
+          "section": "II.5_tourism_conclusions_policy",
+          "char_end": 634,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.1261468533981524,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p9:p002",
+        "text": "In contrast, service sector activity continues relatively strong, signaling sustained buoyancy in private consumption.\n\nDespite a recent uptick in headline inflation, price pressures have remained subdued as credit growth moderated. The headline CPI rose by 2.9 percent (y/y) in May 2019, up slightly from 2.6 percent in January 2019, driven by hikes in administered prices (for electricity and fuel) and moderate food price increases. The State Bank of Vietnam maintained a prudent monetary policy stance to support its twin goals of sustaining macroeconomic stability and supporting overall economic growth. Credit growth is estimated to have slowed to about 13 percent (y/y) in March 2019 reflecting tighter credit policies.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 9,
+        "metadata": {
+          "section": "executive_summary",
+          "char_end": 2495,
+          "chunking": "paragraph_max1000",
+          "char_start": 1767,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.11805773042499361,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": true
+      }
+    ],
+    "context": "[ts-2019-07:p57:p000 | data/raw/taking-stock-2019-07.pdf | page 57]\nBOX II.1 Crossing the tipping point-some cautionary tales\n\nIn recent years, environmental pollution and damage related to uncontrolled tourism growth has forced several popular destinations in the East Asia and Pacific region to take extreme measures to deal with the resulting fallout, including, in some cases, temporarily closing off to visitors. The resulting economic loss (due to both foregone tourism revenue and the cost of remedial measures) serves as a cautionary example of the potential consequences Vietnam could face if it does not proactively and effectively address the threats posed by continued rapid tourism growth.",
+    "context_ids": [
+      "ts-2019-07:p57:p000"
+    ],
+    "context_chars": 702,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 2.432700013741851,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "What share of Vietnam's domestic firms are small and micro enterprises?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 19,
+        "evidence": "Out of around 500 thousand existing domestic firms, 98 percent are small and microenterprises"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p19:p000",
+        "text": "I.11 The domestic private sector is dominated by micro and small enterprises (MSEs). Out of around 500 thousand existing domestic firms, 98 percent are small and microenterprises5. While these enterprises create the vast majority of jobs in the economy, many operate in relatively low productivity services (small retail, restaurants) and simple manufacturing. Most are focused on the domestic markets and few of these businesses are engaged in export activities. They often lack the scale, access to finance and technology to make them efficient producers.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 19,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 557,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.39584056313765287,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p46:p000",
+        "text": "\u0007 WHAT WILL BE THE\n\nNEW NORMAL FOR\n\nVIETNAM?\n\nA",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 46,
+        "metadata": {
+          "section": "new_normal",
+          "char_end": 47,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.2235818881410819,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p18:p000",
+        "text": "Figure I.9: Retail sales growth (y/y, %) Figure I.10: Total investment outlays (% of GDP)\n\n2013 2014 2015 2016 2017 2018 Q1-19\n\nState Non-state Foreign Total\n\nReal Nominal\n\nDec-13\n\nAug-14\n\nApr-15\n\nDec-15\n\nAug-16\n\nApr-17\n\nDec-17\n\nAug-18\n\nApr-19\n\nSource: GSO.\n\nDynamic Domestic Private Enterprise Sector Continues to be Dominated by Micro and Small Enterprises",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 18,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 358,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.16839516624858614,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p19:p000 | data/raw/taking-stock-2019-07.pdf | page 19]\nI.11 The domestic private sector is dominated by micro and small enterprises (MSEs). Out of around 500 thousand existing domestic firms, 98 percent are small and microenterprises5. While these enterprises create the vast majority of jobs in the economy, many operate in relatively low productivity services (small retail, restaurants) and simple manufacturing. Most are focused on the domestic markets and few of these businesses are engaged in export activities. They often lack the scale, access to finance and technology to make them efficient producers.\n\n[ts-2020-07:p46:p000 | data/raw/taking-stock-2020-07.pdf | page 46]\n\u0007 WHAT WILL BE THE\n\nNEW NORMAL FOR\n\nVIETNAM?\n\nA",
+    "context_ids": [
+      "ts-2019-07:p19:p000",
+      "ts-2020-07:p46:p000"
+    ],
+    "context_chars": 742,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": true,
+    "elapsed_ms": 1.7767000244930387,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "From what peak level has the ratio of government debt to output come down, and to what level?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 9,
+        "evidence": "has fallen from a peak of 63.7 percent in 2016 to an estimated 58.4 in 2018"
+      },
+      {
+        "source_id": "ts-2019-07",
+        "page": 20,
+        "evidence": "reduce Vietnam's public debt from 63.7 percent of GDP in 2016 to an estimated 58.4 percent of GDP"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p46:p000",
+        "text": "\u0007 WHAT WILL BE THE\n\nNEW NORMAL FOR\n\nVIETNAM?\n\nA",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 46,
+        "metadata": {
+          "section": "new_normal",
+          "char_end": 47,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.27647309092758515,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p9:p003",
+        "text": "Sustained fiscal discipline and robust growth supported a further decline in Vietnam's public debt-to-GDP ratio. The public debt-to-GDP-ratio has fallen from a peak of 63.7 percent in 2016 to an estimated 58.4 in 2018, based on the Ministry of Finance's definition, and is on track to continue to decline and remain below the legislated debt-ceiling of 65 percent. Taking advantage of favorable domestic market conditions, rising investor confidence and lower yields, the government has continued to shift into longerdated domestic debt instruments, while also reduced the average interest rate.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 9,
+        "metadata": {
+          "section": "executive_summary",
+          "char_end": 3092,
+          "chunking": "paragraph_max1000",
+          "char_start": 2497,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.2712025245659764,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p17:p002",
+        "text": "yy What have been the main channels of transmission of the COVID-19 crisis on the domestic economy and who have been the main financial victims?\n\nyy To what extent has the health strategy followed by the government, with bold and rapid social distancing measures, been justified from an economic point of view?\n\nyy What are the short- to medium-term prospects for the Vietnamese economy and what kind of policies could accelerate the economic recovery in the post COVID-19 era?\n\n1 Vietnam's success in controlling the pandemic has been praised by most international media; see, for example, CNN at https://www.google.com/amp/s/amp.cnn.com/cnn/2020/05/29/asia/coronavirus-vietnam-intl-hnk/index.html.\n\n2 For a discussion on the difference between the health and economic crisis brought on by the COVID-19 pandemic at the international level, see Noy et al. (2020.)\n\nI N T R O D U C T I O N",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 17,
+        "metadata": {
+          "section": "introduction",
+          "char_end": 2754,
+          "chunking": "paragraph_max1000",
+          "char_start": 1866,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.22301190782555194,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2020-07:p46:p000 | data/raw/taking-stock-2020-07.pdf | page 46]\n\u0007 WHAT WILL BE THE\n\nNEW NORMAL FOR\n\nVIETNAM?\n\nA\n\n[ts-2019-07:p9:p003 | data/raw/taking-stock-2019-07.pdf | page 9]\nSustained fiscal discipline and robust growth supported a further decline in Vietnam's public debt-to-GDP ratio. The public debt-to-GDP-ratio has fallen from a peak of 63.7 percent in 2016 to an estimated 58.4 in 2018, based on the Ministry of Finance's definition, and is on track to continue to decline and remain below the legislated debt-ceiling of 65 percent. Taking advantage of favorable domestic market conditions, rising investor confidence and lower yields, the government has continued to shift into longerdated domestic debt instruments, while also reduced the average interest rate.",
+    "context_ids": [
+      "ts-2020-07:p46:p000",
+      "ts-2019-07:p9:p003"
+    ],
+    "context_chars": 778,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "context_hit": true,
+    "elapsed_ms": 3.526599961332977,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "Which tax policy options are proposed to strengthen revenue mobilization?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 22,
+        "evidence": "Several policy options to strengthen revenue mobilization include (i) Broadening the value-added tax (VAT) base (ii) Broadening the corporate income tax (CIT) base and reviewing tax incentives"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p22:p003",
+        "text": "I.21 On the revenue side, the government needs to place greater emphasis on strengthening revenue mobilization to support sustainability in budget consolidation going forward. Strong and rationalized revenue collection would help to both bring down fiscal deficit and provide sustainable resources needed for critical public investment and social spending. Several policy options to strengthen revenue mobilization include (i) Broadening the value-added tax (VAT) base (ii) Broadening the corporate income tax (CIT) base and reviewing tax incentives, (iii) Increasing excise rates; (iv) Expanding the personal income tax (PIT) tax base in line with international practice; (v) Building a modern property tax system; and, (vi) Rationalizing the revenue policies on natural resources and the environment. In addition, the Government should consider taxing the digital economy as a new revenue stream, given its rapid and\n\n7 Moody's, S&P and Fitch\n\nFigure I.18: Domestic Government bond yields (%)",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 22,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 3559,
+          "chunking": "paragraph_max1000",
+          "char_start": 2565,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.3780098819037614,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p23:p000",
+        "text": "dynamic growth in Vietnam. Malaysia's experience so far with digital tax reform could inform policy options for Vietnam (Box I.1).\n\nBox I.1: Taxing the Digital Economy: The case of Malaysia\n\nRaising tax revenue from the digital economy is becoming increasingly important in Malaysia's fiscal reform efforts to further strengthen and diversify the Government's revenue base. Since the global financial crisis and subsequent oil price slump. Achieving a near-balanced federal budget over the medium term therefore requires a deeper wave of reforms to diversify and strengthen the Government's revenue base, including the possibility of extending tax collection to the rapidly growing digital economy in Malaysia.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 23,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 710,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.26056443777901533,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p28:p002",
+        "text": "Furthermore, in its effort to alleviate the financial burden on the private sector, the government has further reduced the corporate income tax for small and medium-sized enterprises, which may cost the budget an additional US$1 billion in the remainder of 2020.\n\nFigure 13. Fall in almost all tax revenue, during the first semester (%, y/y)\n\nNatural resouces tax\n\nLand and housing tax\n\nTrade tax\n\nRegistration tax\n\nValue added tax\n\nCorporate income tax\n\nExcise tax\n\nFees, charges and non-tax\n\nEnvironmental protection tax\n\nPersonal income tax\n\nSource: MOF.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 28,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 2253,
+          "chunking": "paragraph_max1000",
+          "char_start": 1695,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.2517701219743601,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p23:p000 | data/raw/taking-stock-2019-07.pdf | page 23]\ndynamic growth in Vietnam. Malaysia's experience so far with digital tax reform could inform policy options for Vietnam (Box I.1).\n\nBox I.1: Taxing the Digital Economy: The case of Malaysia\n\nRaising tax revenue from the digital economy is becoming increasingly important in Malaysia's fiscal reform efforts to further strengthen and diversify the Government's revenue base. Since the global financial crisis and subsequent oil price slump. Achieving a near-balanced federal budget over the medium term therefore requires a deeper wave of reforms to diversify and strengthen the Government's revenue base, including the possibility of extending tax collection to the rapidly growing digital economy in Malaysia.",
+    "context_ids": [
+      "ts-2019-07:p23:p000"
+    ],
+    "context_chars": 778,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 2.5444000493735075,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "How many World Heritage sites does Vietnam have, and how does that compare with its Southeast Asian neighbours?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 34,
+        "evidence": "Vietnam is home to eight UNESCO World Heritage sites, tied with Indonesia for the most of any country in Southeast Asia"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p18:p001",
+        "text": "The report has four sections. The first sets the stage by briefly describing how the COVID-19 pandemic has changed the world economy, building on the World Bank's June 2020 Global Economic Prospects report. The second section emphasizes how Vietnam has not only managed the health crisis exceptionally well but has also coped with the economic consequences. The third section discusses what the short- to medium-term prospects are for the Vietnamese economy, exploring how to jump start and maintain the recovery in a weak and uncertain global environment. The fourth and last section examines how Vietnam can build on various megatrends emerging in the global economy to accelerate the implementation of its policy agenda and become a high-income economy in the longer term.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 18,
+        "metadata": {
+          "section": "introduction",
+          "char_end": 1375,
+          "chunking": "paragraph_max1000",
+          "char_start": 600,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.20876368001481152,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p34:p002",
+        "text": "II.3 Vietnam, with its diverse natural and cultural tourism assets, is especially poised to benefit from this favorable demand landscape. According to the World Economic Forum's (WEF) latest 2017 Tourism Competitiveness Index, Vietnam ranks 32nd globally (out of 120 countries) in terms of the volume and attractiveness of its natural and cultural resources, and 3rd within the Southeast Asia region (behind Indonesia and Thailand). Notably, Vietnam is home to eight UNESCO World Heritage sites, tied with Indonesia for the most of any country in Southeast Asia. The country also features premier urban tourism destinations, such as Hanoi, Ho Chi Minh City, and Da Nang.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 34,
+        "metadata": {
+          "section": "II.1_tourism_strategic_context",
+          "char_end": 2464,
+          "chunking": "paragraph_max1000",
+          "char_start": 1794,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.16932656247460356,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p54:p005",
+        "text": "monitoring, and financing measures. On the policy front, the designation of specific natural/cultural sites and attractions as protected or heritage areas is one key foundational measure. In destinations such as Hanoi, where a growing number of historical buildings are being torn down to make space for modern high rises, stronger cultural heritage preservation regulations or guidelines are also an important consideration. Monitoring measures would entail identifying or establishing intuitions and systems to track key risks to destinations' natural, cultural and social assets and identify growing pressure points (e.g. the proliferation of single-use plastics). The financing side of the equation involves mobilizing revenue streams dedicated to asset preservation, so that there are sufficient resources to manage protected areas and heritage sites, properly enforce regulations, and maintain both the assets and any public infrastructure and services linked to them.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 54,
+        "metadata": {
+          "section": "II.5_tourism_conclusions_policy",
+          "char_end": 3981,
+          "chunking": "paragraph_max1000",
+          "char_start": 3007,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.1294512262909272,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p34:p002 | data/raw/taking-stock-2019-07.pdf | page 34]\nII.3 Vietnam, with its diverse natural and cultural tourism assets, is especially poised to benefit from this favorable demand landscape. According to the World Economic Forum's (WEF) latest 2017 Tourism Competitiveness Index, Vietnam ranks 32nd globally (out of 120 countries) in terms of the volume and attractiveness of its natural and cultural resources, and 3rd within the Southeast Asia region (behind Indonesia and Thailand). Notably, Vietnam is home to eight UNESCO World Heritage sites, tied with Indonesia for the most of any country in Southeast Asia. The country also features premier urban tourism destinations, such as Hanoi, Ho Chi Minh City, and Da Nang.",
+    "context_ids": [
+      "ts-2019-07:p34:p002"
+    ],
+    "context_chars": 738,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "context_hit": true,
+    "elapsed_ms": 3.1261000549420714,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q07",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "What share of Vietnam's international arrivals in 2018 came from China, South Korea and Japan combined?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 39,
+        "evidence": "Collectively, these three countries accounted for 60 percent of Vietnam's international arrivals in 2018"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p39:p000",
+        "text": "II.10 The vast majority of international visitors to Vietnam originate from Northeast Asia, especially China, South Korea and Japan. Collectively, these three countries accounted for 60 percent of Vietnam's international arrivals in 2018 (Figure II.5). A significant share of visitors (11 percent) also come from the nearby Southeast Asian nations. Other top visitor source markets are the United States (4.4 percent) and Russia (3.9 percent), reflecting their strong historical Cold War era links to Vietnam.\n\nFigure II.5: The bulk of Vietnam's international visitor originate from Northeast Asia\n\nChina, 32.0%\n\nKorea, 22.5%\n\nJapan, 5.3%\n\nOther Asia, 18.0%\n\nEurope, 13.1%\n\nAmericas, 5.8%\n\nOceania, 2.8% Africa, 0.3%\n\nVietnam's key visitor source countries/regions (2018)\n\nSource: GSO.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 39,
+        "metadata": {
+          "section": "II.2_tourism_sector_performance",
+          "char_end": 785,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.31423025870317345,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p39:p001",
+        "text": "II.11 These key visitor source markets have not changed significantly in recent years, but there has been a marked increase in the share of Chinese and Korean visitors-relatively lower-yielding visitor segments. Most top source markets recorded robust double-digit growth rates in the range of 10-20 percent between 2015 and 2018, but in the case of China and South Korea, annualized growth over this period averaged around 43 percent, a remarkable increase given the already-high level of arrivals from these countries and their maturity as tourism source markets for Vietnam. As a result, the share of total arrivals from China and South Korea has ballooned from 31 percent in 2012 to 55 percent in 2018. While this trend has benefitted overall arrival numbers, visitors from these two markets tend to have shorter lengths of stay, on average, than visitors from longer-haul markets such as Europe and the United States, and, in the case of China, also spend relatively less per day (Figure II.6).",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 39,
+        "metadata": {
+          "section": "II.2_tourism_sector_performance",
+          "char_end": 1786,
+          "chunking": "paragraph_max1000",
+          "char_start": 787,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.3003846521994366,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p37:p000",
+        "text": "Figure II.2: Vietnam's international arrival trends in a regional context\n\nLao PDR\n\nMyanmar\n\nCambodia\n\nPhilippines\n\nVietnam\n\nIndonesia\n\nMalaysia\n\nThailand\n\nInternational arrivals to developing Southeast Asia (2018)\n\nNumber of arrivals (left axis) Arrivals per capita (right axis)\n\nnumber (million) percapita\n\nMalaysia\n\nPhilippines\n\nIndonesia\n\nThailand\n\nLao PDR\n\nCambodia\n\nVietnam\n\nMyanmar\n\nInternational visitor growth and market shares\n\n10-year average growth in arrivals, 2008-18 5-year average growth in arrivals, 2013-18 Market share in developing Southeast Asia, 2018 (right scale)\n\ngrowth (percent) market share (percent)\n\nVietnam's market share in the region has been on the rise\n\nVietnam's share of total arrivals to developing Southeast Asia\n\nVietnam's share of total arrivals to East Asia\n\nNote: Arrivals per capita is based on 2017 population figures.\n\nSources: WDI, UNWTO, GSO.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 37,
+        "metadata": {
+          "section": "II.2_tourism_sector_performance",
+          "char_end": 889,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.2767547590057392,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "context_chars": 0,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 3.5051999730058014,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q08",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "How long do foreign tourists typically stay in Vietnam, and has their stay been getting longer or shorter?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 39,
+        "evidence": "a decline in their average length of stay (from 11.1 days in 2013 to 10.2 days in 2017)"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p39:p002",
+        "text": "This shift therefore represents an erosion in the overall economic yield of Vietnam's international visitor mix, evidenced by the stagnant average daily spending of visitors between 2014 and 2017 (US$96), and a decline in their average length of stay (from 11.1 days in 2013 to 10.2 days in 2017).23\n\n23 \u0007Estimates are based on the GSO tourist survey, and refer to the average length of stay (ALOS) of international visitors excluding those who are overseas Vietnamese returning home (who tend to stay slightly longer, on average). The decline in ALOS in recent years is also partly attributable to improvements in regional transport connectivity (particularly the growth of low-cost air carriers), which have enabled shorter and more affordable visits, particularly from nearby Southeast Asian nations.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 39,
+        "metadata": {
+          "section": "II.2_tourism_sector_performance",
+          "char_end": 2590,
+          "chunking": "paragraph_max1000",
+          "char_start": 1786,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.28189367620637557,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p53:p003",
+        "text": "market tourism segments can contribute to several of Vietnam's key tourism objectives-namely the dispersal of tourists away from crowded destinations and a more equitable distribution of tourism benefits. Achieving this requires efforts on two key fronts. First, marketing and promotion must be increasingly targeted at relatively higher-spending visitor source markets, such as Europe and the Americas. Furthermore, since most tourists generally do not visit sites in isolation, but rather as part of broader itineraries within certain geographic clusters (e.g. the Hue-Da Nang-Hoi An corridor), efforts should also be made to market \"secondary\" tourism attractions in poorer areas within or nearby these existing clusters, so as to better leverage tourism's poverty reduction potential. Second, new and higher-quality tourism products need to be developed, both to encourage visitors to spend more but also to stay longer.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 53,
+        "metadata": {
+          "section": "II.5_tourism_conclusions_policy",
+          "char_end": 2459,
+          "chunking": "paragraph_max1000",
+          "char_start": 1535,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.17117033432875361,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p39:p001",
+        "text": "II.11 These key visitor source markets have not changed significantly in recent years, but there has been a marked increase in the share of Chinese and Korean visitors-relatively lower-yielding visitor segments. Most top source markets recorded robust double-digit growth rates in the range of 10-20 percent between 2015 and 2018, but in the case of China and South Korea, annualized growth over this period averaged around 43 percent, a remarkable increase given the already-high level of arrivals from these countries and their maturity as tourism source markets for Vietnam. As a result, the share of total arrivals from China and South Korea has ballooned from 31 percent in 2012 to 55 percent in 2018. While this trend has benefitted overall arrival numbers, visitors from these two markets tend to have shorter lengths of stay, on average, than visitors from longer-haul markets such as Europe and the United States, and, in the case of China, also spend relatively less per day (Figure II.6).",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 39,
+        "metadata": {
+          "section": "II.2_tourism_sector_performance",
+          "char_end": 1786,
+          "chunking": "paragraph_max1000",
+          "char_start": 787,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.1604443679480091,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "context_chars": 0,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 3.172400000039488,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "How many tourism workers will Vietnam need by 2020, and can tourism schools supply enough graduates?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 49,
+        "evidence": "will need roughly 870,000 workers by 2020 to keep up with demand growth, or 40,000 per year.35 However, current tourism schools churn out only around 15,000 graduates nationwide each year"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p49:p000",
+        "text": "Scarcity of tourism human resources\n\nII.26 The supply of tourism workers has been increasingly unable to keep up with the demands of the rapidly-growing sector. According to VNAT estimates, Vietnam's tourism sector directly employed around 750,000 workers in 2017, but will need roughly 870,000 workers by 2020 to keep up with demand growth, or 40,000 per year.35 However, current tourism schools churn out only around 15,000 graduates nationwide each year, a significant shortfall. This labor supply gap is most clearly seen in the growing shortage of qualified tour guides-in 2015, there were approximately 1.57 licensed tour guides per 1,000 international visitors, but this ratio has since fallen to 0.96 in 2017. For guides with licenses to tour domestic visitors, the ratio has similarly declined from 0.17 guides per 1,000 domestic visitors in 2014, to 0.11 in 2017.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 49,
+        "metadata": {
+          "section": "II.4_tourism_challenges",
+          "char_end": 873,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.2270966341067819,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p53:p006",
+        "text": "import leakage of tourism spending compared to the rest of the region suggests the sector already employs a fairly large share of local labor and resources. To sustain this local content, however, the supply of skilled tourism labor, which has become more and more scarce in recent years, will need to grow faster to keep up with accelerating demand. This is particularly important for enabling the development of higher-value, niche, or eco-friendly tourism products, which tend to require more specialized tour guides and knowledge. Furthermore, links to other sectors in the tourism value chain (e.g. agriculture, transport, recreation) will need to be strengthened to help increase the \"multiplier\" impact of tourism spending on the rest of the economy, which is relatively lower in Vietnam than the rest of the region. This involves ensuring that there is (i) a sufficient quantity of local workers and",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 53,
+        "metadata": {
+          "section": "II.5_tourism_conclusions_policy",
+          "char_end": 4456,
+          "chunking": "paragraph_max1000",
+          "char_start": 3549,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.176581423307985,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p44:p001",
+        "text": "The same is true for the tourism spending multiplier impact on employment in Vietnam-around 1.7, compared to regional and global averages of 2.5 and 2.6, respectively. This points to a need to strengthen tourism sector linkages to the rest of Vietnam's economy, enabling workers and firms in other sectors to indirectly benefit from Vietnam's growing tourism.\n\nFigure II.11: Multiplier effects of tourism spending\n\nWORLD SOUTHEAST\n\nASIA\n\nPhilippines Vietnam Thailand Cambodia Myanmar Malaysia Indonesia Laos\n\nGDP Employment\n\nmultiplier value\n\nGDP and employment multipliers for tourism spending (2017)\n\nSource: World Travel and Tourism Council (WTTC).",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 44,
+        "metadata": {
+          "section": "II.3_tourism_economic_impacts",
+          "char_end": 1530,
+          "chunking": "paragraph_max1000",
+          "char_start": 878,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.1675502604221742,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p44:p001 | data/raw/taking-stock-2019-07.pdf | page 44]\nThe same is true for the tourism spending multiplier impact on employment in Vietnam-around 1.7, compared to regional and global averages of 2.5 and 2.6, respectively. This points to a need to strengthen tourism sector linkages to the rest of Vietnam's economy, enabling workers and firms in other sectors to indirectly benefit from Vietnam's growing tourism.\n\nFigure II.11: Multiplier effects of tourism spending\n\nWORLD SOUTHEAST\n\nASIA\n\nPhilippines Vietnam Thailand Cambodia Myanmar Malaysia Indonesia Laos\n\nGDP Employment\n\nmultiplier value\n\nGDP and employment multipliers for tourism spending (2017)\n\nSource: World Travel and Tourism Council (WTTC).",
+    "context_ids": [
+      "ts-2019-07:p44:p001"
+    ],
+    "context_chars": 719,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 3.416999999899417,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "By how much is public debt as a share of GDP expected to change between 2019 and 2020?",
+    "filter": {
+      "edition_year": 2020
+    },
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 41,
+        "evidence": "public debt should increase from 54.1 to 56.1 percent of GDP between 2019 and 2020"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p41:p002",
+        "text": "In line with the expected short-term deterioration in the public deficit, public debt should increase from 54.1 to 56.1 percent of GDP between 2019 and 2020. This increase will be relatively limited because the government should be able to rely on its accumulated reserves to compensate for declining revenues and to finance additional spending. Subsequently, the government should return to its fiscal consolidation effort that will return the public debt-to-GDP ratio to the range of 55 percent during 2021-22. As in recent years, the government should rely on a combination of domestic and external borrowing to manage the risks associated to both the exchange rate and interest rate.\n\nManaging risks",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 41,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 1718,
+          "chunking": "paragraph_max1000",
+          "char_start": 1015,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.24841810428258237,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p11:p003",
+        "text": "The global economy has entered into its worst recession in recent decades. Global GDP is expected to decline by 5.2 percent in 2020 as the result of the COVID-19 pandemic and the associated measures taken to contain it over time. Today, it is estimated that over half a million people have already died from the coronavirus, and 10 million have been infected worldwide - and these figures are mounting every day.\n\nNot only is the world facing its worst recession, but almost all countries are expected to be negatively affected by the impact of the pandemic. With the exception of East Asia, all regions will report negative GDP growth rates in 2020. Similarly, only 57 out of 191 countries are expected to increase their GDP from 2019 to 2020, down from 171 a year ago.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 11,
+        "metadata": {
+          "section": "key_messages",
+          "char_end": 2829,
+          "chunking": "paragraph_max1000",
+          "char_start": 2059,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.20588160490031998,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p37:p000",
+        "text": "\u0007 SHORT- AND MEDIUM-TERM ECONOMIC PROSPECTS\n\nV\n\nietnam's short- to medium-term economic prospects will depend as much as on the speed of recovery of the local economy as on the evolution of the pandemic in the rest of the world. As discussed below, the GDP growth rate could reach 2.8 percent in 2020 and 6.7 percent in 2021 with favorable domestic and international conditions. These projections are, however, subject to great uncertainties and, most likely, will require a shift in how the government is conducting its fiscal policy so it can efficiently support the economic recovery.\n\nIn the search of new drivers to jump start the recovery",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 37,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 644,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.18320920638754598,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2020-07:p41:p002 | data/raw/taking-stock-2020-07.pdf | page 41]\nIn line with the expected short-term deterioration in the public deficit, public debt should increase from 54.1 to 56.1 percent of GDP between 2019 and 2020. This increase will be relatively limited because the government should be able to rely on its accumulated reserves to compensate for declining revenues and to finance additional spending. Subsequently, the government should return to its fiscal consolidation effort that will return the public debt-to-GDP ratio to the range of 55 percent during 2021-22. As in recent years, the government should rely on a combination of domestic and external borrowing to manage the risks associated to both the exchange rate and interest rate.\n\nManaging risks",
+    "context_ids": [
+      "ts-2020-07:p41:p002"
+    ],
+    "context_chars": 771,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": true,
+    "elapsed_ms": 4.82999999076128,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "What rate of credit growth does the report record for the latest period?",
+    "filter": {
+      "edition_year": 2020
+    },
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 24,
+        "evidence": "maintain credit expansion at 8.5 percent (y/y) during the first semester"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p46:p000",
+        "text": "\u0007 WHAT WILL BE THE\n\nNEW NORMAL FOR\n\nVIETNAM?\n\nA",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 46,
+        "metadata": {
+          "section": "new_normal",
+          "char_end": 47,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.21238297859896538,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p17:p001",
+        "text": "The objective of this edition of Taking Stock is to discuss to what extent the COVID-19 pandemic has affected the Vietnamese economy. While a close correlation should be expected between health and economic gains, this link is not automatic, as a country could report few COVID-19 cases but face serious economic damage because of restrictions and a heavy dependence, for example, on tourism and remittances.2 In Vietnam, while the government's strategy has provided great health benefits, it has come with economic costs, since GDP growth dropped by more than 5 percentage points in the first semester of the year compared to precrisis projections. Furthermore, recent estimates by the government indicate that as many as 30 million workers, or over half of the labor force, could have been affected by the crisis. The following set of questions are therefore examined in the report:\n\nyy What has been the impact of the COVID-19 pandemic on Vietnam's economy during the recent months?",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 17,
+        "metadata": {
+          "section": "introduction",
+          "char_end": 1864,
+          "chunking": "paragraph_max1000",
+          "char_start": 879,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.1941075581923371,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p18:p001",
+        "text": "The report has four sections. The first sets the stage by briefly describing how the COVID-19 pandemic has changed the world economy, building on the World Bank's June 2020 Global Economic Prospects report. The second section emphasizes how Vietnam has not only managed the health crisis exceptionally well but has also coped with the economic consequences. The third section discusses what the short- to medium-term prospects are for the Vietnamese economy, exploring how to jump start and maintain the recovery in a weak and uncertain global environment. The fourth and last section examines how Vietnam can build on various megatrends emerging in the global economy to accelerate the implementation of its policy agenda and become a high-income economy in the longer term.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 18,
+        "metadata": {
+          "section": "introduction",
+          "char_end": 1375,
+          "chunking": "paragraph_max1000",
+          "char_start": 600,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.15962657009557588,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2020-07:p46:p000 | data/raw/taking-stock-2020-07.pdf | page 46]\n\u0007 WHAT WILL BE THE\n\nNEW NORMAL FOR\n\nVIETNAM?\n\nA",
+    "context_ids": [
+      "ts-2020-07:p46:p000"
+    ],
+    "context_chars": 115,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "context_hit": false,
+    "elapsed_ms": 3.4743999713100493,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "How much committed foreign direct investment did Vietnam attract in the first half of 2020, and how did it compare with a year earlier?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 26,
+        "evidence": "(committed) FDI inflow reached close to US$16 billion between January and June 2020 (figure 12). Yet, these inflows were 15 percent lower than during the same period in 2019"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p18:p001",
+        "text": "The report has four sections. The first sets the stage by briefly describing how the COVID-19 pandemic has changed the world economy, building on the World Bank's June 2020 Global Economic Prospects report. The second section emphasizes how Vietnam has not only managed the health crisis exceptionally well but has also coped with the economic consequences. The third section discusses what the short- to medium-term prospects are for the Vietnamese economy, exploring how to jump start and maintain the recovery in a weak and uncertain global environment. The fourth and last section examines how Vietnam can build on various megatrends emerging in the global economy to accelerate the implementation of its policy agenda and become a high-income economy in the longer term.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 18,
+        "metadata": {
+          "section": "introduction",
+          "char_end": 1375,
+          "chunking": "paragraph_max1000",
+          "char_start": 600,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.19631545478177215,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p24:p001",
+        "text": "In other words, while the Vietnamese economy has been used to running on two engines of growth in recent years, the foreign and domestic sectors have not functioned together, but rather sequentially, since the beginning of the COVID-19 crisis.\n\nThe slowdown in economic activity reflects to a large extent the decline in the expansion of domestic demand during the first semester. At a time of great uncertainty, businesses and households face cash-flow constraints and limit their investment and consumption plans. The nominal growth of total investment slowed to 3.4 percent in the first half 2020 from 10.2 percent in the same period last year. Private investment expansion decelerated from 16.5 percent to only 4.6 percent as many businesses have started to face cash flow constraints and uncertainties. The state, however, accelerated the execution of its investment projects, which grew by 7.4 percent in the first half of the year against 2.8 percent during the same period in 2019.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 24,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 1893,
+          "chunking": "paragraph_max1000",
+          "char_start": 903,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.1637874625847653,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p37:p000",
+        "text": "\u0007 SHORT- AND MEDIUM-TERM ECONOMIC PROSPECTS\n\nV\n\nietnam's short- to medium-term economic prospects will depend as much as on the speed of recovery of the local economy as on the evolution of the pandemic in the rest of the world. As discussed below, the GDP growth rate could reach 2.8 percent in 2020 and 6.7 percent in 2021 with favorable domestic and international conditions. These projections are, however, subject to great uncertainties and, most likely, will require a shift in how the government is conducting its fiscal policy so it can efficiently support the economic recovery.\n\nIn the search of new drivers to jump start the recovery",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 37,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 644,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.13369145146361122,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2020-07:p37:p000 | data/raw/taking-stock-2020-07.pdf | page 37]\n\u0007 SHORT- AND MEDIUM-TERM ECONOMIC PROSPECTS\n\nV\n\nietnam's short- to medium-term economic prospects will depend as much as on the speed of recovery of the local economy as on the evolution of the pandemic in the rest of the world. As discussed below, the GDP growth rate could reach 2.8 percent in 2020 and 6.7 percent in 2021 with favorable domestic and international conditions. These projections are, however, subject to great uncertainties and, most likely, will require a shift in how the government is conducting its fiscal policy so it can efficiently support the economic recovery.\n\nIn the search of new drivers to jump start the recovery",
+    "context_ids": [
+      "ts-2020-07:p37:p000"
+    ],
+    "context_chars": 712,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "context_hit": false,
+    "elapsed_ms": 2.687099971808493,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "Why did the government not need to borrow to respond to the pandemic shock?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 28,
+        "evidence": "accumulation of substantial cash reserves of about US$8 billion at the end of 2019"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p28:p000",
+        "text": "After three years of fiscal consolidation that helped to build significant buffers, the government has been able to cope with the COVID-19 shock. The prudent fiscal policy followed by the authorities in the past few years has created some fiscal space and led to the accumulation of substantial cash reserves of about US$8 billion at the end of 2019. As a result, the government had no pressing need to borrow from either the domestic or international markets in recent months, in sharp contrast to what has been observed in most countries in the world. In the first six months of 2020, the Ministry of Finance issued 96.1 trillion dong (about US$4.3 billion) of T-bonds with an average maturity of 14.1 years and an average annual coupon rate of 3 percent, which is approximately 14 percent lower than in 2019. The government has not borrowed on the international market or requested budget support from its traditional partners.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 28,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 930,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.21029788650053546,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p39:p002",
+        "text": "The government should therefore devote greater attention to whom it should provide financial assistance; otherwise, there is a risk of wasting scarce public resources and sending the wrong signals to the markets.\n\nAfter identifying the businesses that are facing prolonged difficulties due to the COVID-19 crisis, the government should consider helping those that are expected to remain viable and to rebound quickly. The rationale for public intervention is to keep them in position to contribute to the economic recovery by making sure they have enough human and financial resources to respond to the increase in domestic demand. To avoid persistent negative effects on economies and workers, it is critical that viable firms do not exit and that financial institutions continue to provide access to credit and working capital for businesses in a sustainable manner.24 In Vietnam, the government must think how to best support businesses in at least the two following sectors:",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 39,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 2072,
+          "chunking": "paragraph_max1000",
+          "char_start": 1093,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.17094314445010586,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p19:p001",
+        "text": "The impact of COVID-19 has been particularly brutal on the global economy due to the combination of health and preventive measures taken to control the pandemic. The stricter the public health measures, the bigger will be the short-term blow to the economy, even if history has demonstrated that the countries that expend the greatest effort to control a pandemic are the most likely to recover quicker in the medium to longer term.4 The mandating of lockdowns and physical distancing by most high-income countries has saved lives, but also explains why these economies have already reported an average contraction of almost 1 percent in the first quarter of the year and that has most certainly aggravated during the second quarter. These countries have faced lower domestic consumption and investment, as well as restricted labor supply and local production.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 19,
+        "metadata": {
+          "section": "covid19_in_the_world",
+          "char_end": 1655,
+          "chunking": "paragraph_max1000",
+          "char_start": 795,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.1683065144385805,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "context_chars": 0,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 1.3672999921254814,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "How many countries are expected to increase their GDP from 2019 to 2020?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 11,
+        "evidence": "only 57 out of 191 countries are expected to increase their GDP from 2019 to 2020, down from 171 a year ago"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p11:p003",
+        "text": "The global economy has entered into its worst recession in recent decades. Global GDP is expected to decline by 5.2 percent in 2020 as the result of the COVID-19 pandemic and the associated measures taken to contain it over time. Today, it is estimated that over half a million people have already died from the coronavirus, and 10 million have been infected worldwide - and these figures are mounting every day.\n\nNot only is the world facing its worst recession, but almost all countries are expected to be negatively affected by the impact of the pandemic. With the exception of East Asia, all regions will report negative GDP growth rates in 2020. Similarly, only 57 out of 191 countries are expected to increase their GDP from 2019 to 2020, down from 171 a year ago.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 11,
+        "metadata": {
+          "section": "key_messages",
+          "char_end": 2829,
+          "chunking": "paragraph_max1000",
+          "char_start": 2059,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.33412479905146214,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p15:p000",
+        "text": "security concerns could also continue to adversely impact EMDE capital inflows. Oil prices are expected to average $66/bbl in 2019 and $65/bbl in 2020, with high uncertainty around the forecast. Overall, metals prices are expected to decline slightly in 2019 and 2020, reflecting a weaker outlook for global metal demand. Agricultural prices are expected to decline in 2019 and stabilize in 2020 (figure I.3).",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 15,
+        "metadata": {
+          "section": "I.1_external_environment",
+          "char_end": 409,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.27451893233111013,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p40:p003",
+        "text": "During 2021-22, the Vietnamese economy is expected to return gradually to its historical GDP expansion of approximately 6 to 7 percent per year, as foreign demand should pick up in the main industrial countries. Over the next few years, Vietnam is expected to continue to benefit from trade and investment diversions thanks to its adhesion to various global and regional agreements, including the EU-Vietnam Free Trade Agreement (EVFTA) in June 2020.\n\nMost financial variables will remain under control in 2020, especially the inflation rate, which is expected to remain under 4 percent during 2020-22. The SBV should adjust monetary expansion to the expected growth rate of the economy to contain potential pressure on domestic prices over time. Food and energy prices - two important items in the Consumer Price Index - should not see large increases in the absence of disruption in their supply chains or deterioration in climatic conditions.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 40,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 3004,
+          "chunking": "paragraph_max1000",
+          "char_start": 2058,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.22588902797971466,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p15:p000 | data/raw/taking-stock-2019-07.pdf | page 15]\nsecurity concerns could also continue to adversely impact EMDE capital inflows. Oil prices are expected to average $66/bbl in 2019 and $65/bbl in 2020, with high uncertainty around the forecast. Overall, metals prices are expected to decline slightly in 2019 and 2020, reflecting a weaker outlook for global metal demand. Agricultural prices are expected to decline in 2019 and stabilize in 2020 (figure I.3).",
+    "context_ids": [
+      "ts-2019-07:p15:p000"
+    ],
+    "context_chars": 477,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 1.393800019286573,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "Which export destination markets grew and which declined in the first six months of 2020?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 26,
+        "evidence": "Vietnam was able to sustain exports to the United States (up by 10.3 percent) and China (up by 17 percent) but faced weaker demand from Japan (down by 2.3 percent), the European Union (down by 8.8 percent)"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p26:p002",
+        "text": "Vietnam's trade balance improved during the first semester of the year because merchandise imports declined faster than exports. The value of Vietnam's total exports declined by 1.1 percent in the first six months of 2020 compared to an increase of 7.2 percent during the same period last year (figure 9). With the exception of computers and parts, all manufacturing exports decreased over the first semester, including garments and smart phones, which were down by over 20 percent and 8.4 percent, respectively. Agricultural exports were resilient due to the high price of rice on international markets even if seafood declined by over 8 percent. In terms of destination markets, Vietnam was able to sustain exports to the United States (up by 10.3 percent) and China (up by 17 percent) but faced weaker demand from Japan (down by 2.3 percent), the European Union (down by 8.8 percent), and other Association of Southeast Asian Nation countries (down by 14.2 percent) (figure 10).",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 26,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 2118,
+          "chunking": "paragraph_max1000",
+          "char_start": 1137,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.2567365198010104,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p23:p004",
+        "text": "I.22 Export growth decelerated during the first four months of 2019, reflecting uncertain global trade developments. Vietnam's total exports are estimated to have expanded by 6.5 percent (y/y) in the first four months of 2019 in nominal terms. While this exceeds global and regional trade growth, it is less than half the growth rate of 13.2 percent in 2018 (figure I.19). Most export categories posted less buoyant growth. In particular, agricultural commodities contracted, with rice exports down by 18 percent in value terms and 5 percent in volume terms in the first quarter of 2019. Exports of seafood declined by nearly one percent, after posting strong growth over the past three years. Exports of phones - the largest single export item of Vietnam, which accounts for about 20 percent of total exports - declined by about one percent.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 23,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 3584,
+          "chunking": "paragraph_max1000",
+          "char_start": 2742,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.22951091739032867,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p28:p003",
+        "text": "Second, on the spending side, total expenditure rose by an estimated 9.5 percent between the first six months of 2019 and 2020. This increase is the combination of COVID-19-related expenses and the greater effort to accelerate the disbursement of the public investment program.8 Such effort, which has already led to a 19 percent increase in disbursed investment between the first six months of 2019 and 2020, is expected to be strengthened in the coming months. It will be only partly compensated by savings on travel and other recurrent expenditures.\n\n8 COVID-19-related spending was estimated to amount to 15.3 trillion dong of which 4.1 trillion dong was spent on pandemic protection and prevention (testing, quarantine, devices, and equipment) and 11.3 trillion dong disbursed to support vulnerable people, households, workers, and firm (about 18 percent of the 62.1 trillion dong package of Resolution 42).",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 28,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 3167,
+          "chunking": "paragraph_max1000",
+          "char_start": 2255,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.2172765372198785,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "context_chars": 0,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 1.8406999879516661,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q16",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "How fast did Vietnam's real GDP grow in the most recent quarter covered by the report, compared with a year earlier?",
+    "filter": {
+      "edition_year": 2019
+    },
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 9,
+        "evidence": "Vietnam's real GDP growth has decelerated to a still robust 6.8 percent in the first quarter of 2019 from a vibrant 7.5 percent pace in the same period of 2018"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p17:p002",
+        "text": "I.9 Domestic demand presents a mixed picture in the first quarter 2019. On one hand, the growth in retail sales - a proxy for private consumption - rose 11.6 percent in nominal terms (about 8.6 percent in real terms) in the first five months of 2019, underpinned by moderate inflation and salary increases (figure 9). On the other hand, the pace of investment growth decelerated somewhat. Total investment outlays, which accounted for 32.2 percent of GDP in the first quarter of 2019, grew by 8.8 percent in nominal terms, compared to 10 percent in the first quarter of 2018 (figure I.10). The share of state investment (financed by both the state budget and loans to state-owned enterprises) in GDP declined to 9.6 percent in the first quarter, significantly below the average rate of 12 percent in 2014-18, reflecting ongoing implementation of fiscal consolidation.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 17,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 2086,
+          "chunking": "paragraph_max1000",
+          "char_start": 1219,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.16631679549517658,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p16:p000",
+        "text": "I.2. RECENT ECONOMIC DEVELOPMENTS IN VIETNAM\n\nVibrant Economic Growth, albeit Moderating\n\nI.6 Following a bumper year in 2018, Vietnam's real GDP growth decelerated in the first quarter of 2019. Nevertheless, growth remained significantly above the first quarter outturns in 2016 and 2017 (figure I.5). The moderation in growth in early-2019 is due to both domestic and external factors. On the domestic front, a deceleration in agricultural output largely stems from a widespread outbreak of African swine fever that reduced livestock production, as well as a decline in prices for some agricultural products. A modest slowdown in the pace of growth in construction reflects a less sanguine real estate sector and ongoing consolidation of public investment. The services sector continued to benefit from strong household consumption and posted a slight acceleration in growth. Largely reflecting weaker external demand, manufacturing sector output growth moderated.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 16,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 966,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.15460379720232198,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p48:p001",
+        "text": "II.25 The rapid increase in tourism arrivals and the accompanying expansion in accommodation supply it has stimulated risk overwhelming transport and services infrastructure. As mentioned earlier, the recent rise in tourism intensity-as measured by the increase in visitors per capita, both at the national level and in various localities-is leading to problems of overcrowding, traffic congestion, and pollution, particularly in already-densely populated urban destinations such as Hanoi, Da Nang, and Ho Chi Minh City. Most tourism-related infrastructure investment in recent years has focused on expanding the supply of accommodation to keep up with this visitor growth. Over the past 3 years (2015-2017), the stock of rooms nationwide has grown nearly 7 percentage points faster, on average, than the preceding 7 years (16.3 percent compared to 9.6 percent), and the year-on-year increase in 2017 (20.1 percent) was the single largest in the last 15 years.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 48,
+        "metadata": {
+          "section": "II.4_tourism_challenges",
+          "char_end": 1690,
+          "chunking": "paragraph_max1000",
+          "char_start": 730,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.14982386828952363,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "context_chars": 0,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "context_hit": false,
+    "elapsed_ms": 2.6070000021718442,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q17",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "What GDP growth rate is projected for Vietnam for the whole of 2020 in the baseline scenario?",
+    "filter": {
+      "edition_year": 2020
+    },
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 13,
+        "evidence": "the economy will grow around 2.8 percent for the entire year"
+      },
+      {
+        "source_id": "ts-2020-07",
+        "page": 37,
+        "evidence": "the GDP growth rate could reach 2.8 percent in 2020"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p41:p003",
+        "text": "However, the baseline scenario is subject to several exogenous and endogenous risks. The Vietnamese economy - due to its high degree of openness to the world - is highly sensitive to global events. To reflect this uncertainty, a downside scenario was created in which the global recovery will be slower than assumed above. In that scenario, GDP growth in Vietnam is projected to reach only 1.5 percent in 2020. Of course, the projected rate is highly sensitive to assumptions so should be viewed as an illustration of Vietnam's exposure to the global economy. In the downside scenario, the deterioration of the balance of payments will also be larger as the decline in (net) exports and in capital inflows will be bigger than in the baseline scenario.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 41,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 2471,
+          "chunking": "paragraph_max1000",
+          "char_start": 1720,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.4222090894487825,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p13:p001",
+        "text": "Although the Vietnamese economy suffered from COVID-19 in the first semester of 2020, prospects remain positive for both the short and medium term. Assuming a gradual improvement in the world economy, GDP should rebound in the second semester of 2020 so that the economy will grow around 2.8 percent for the entire year. It should further expand by 6.8 percent in 2021 (baseline scenario). With less favorable external conditions, the economy will expand by only 1.5 percent in 2020 and 4.5 percent in 2021 (downside scenario). Regardless of scenario, Vietnam is expected to remain one of the fastest-growing economies in the world in 2020.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 13,
+        "metadata": {
+          "section": "key_messages",
+          "char_end": 1102,
+          "chunking": "paragraph_max1000",
+          "char_start": 462,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.32979124752971617,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p46:p000",
+        "text": "\u0007 WHAT WILL BE THE\n\nNEW NORMAL FOR\n\nVIETNAM?\n\nA",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 46,
+        "metadata": {
+          "section": "new_normal",
+          "char_end": 47,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.2727911697560351,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2020-07:p13:p001 | data/raw/taking-stock-2020-07.pdf | page 13]\nAlthough the Vietnamese economy suffered from COVID-19 in the first semester of 2020, prospects remain positive for both the short and medium term. Assuming a gradual improvement in the world economy, GDP should rebound in the second semester of 2020 so that the economy will grow around 2.8 percent for the entire year. It should further expand by 6.8 percent in 2021 (baseline scenario). With less favorable external conditions, the economy will expand by only 1.5 percent in 2020 and 4.5 percent in 2021 (downside scenario). Regardless of scenario, Vietnam is expected to remain one of the fastest-growing economies in the world in 2020.",
+    "context_ids": [
+      "ts-2020-07:p13:p001"
+    ],
+    "context_chars": 708,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "context_hit": true,
+    "elapsed_ms": 2.071399998385459,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q18",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "How large is the fiscal deficit expected to be in 2020, and what happens afterwards?",
+    "filter": {
+      "edition_year": 2020
+    },
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 41,
+        "evidence": "It should reach approximately 6 percent of GDP in 2020 before returning to 4 to 5 percent levels in subsequent years"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p46:p000",
+        "text": "\u0007 WHAT WILL BE THE\n\nNEW NORMAL FOR\n\nVIETNAM?\n\nA",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 46,
+        "metadata": {
+          "section": "new_normal",
+          "char_end": 47,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.27771280392764697,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p41:p004",
+        "text": "There are also several endogenous risks that will require close monitoring by the authorities. COVID-19 is still around, as demonstrated by the resurgence of cases in Australia, China, and Germany, countries that have been quite effective in fighting the first wave of the pandemic. Additional risks are to a large extent linked to the policies that the government will follow in the near future. First, while a smart and countercyclical fiscal policy is needed, it will have to be conducted with caution. The government can finance a temporary increase in the fiscal deficit, as discussed earlier, but should do it within the fiscal space to maintain fiscal and debt sustainability over time. In case of slower-than-expected recovery, policy makers could be tempted to spend too fast, especially in the months preceding the next Party Congress scheduled in early 2021, endangering fiscal and debt sustainability in the longer term.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 41,
+        "metadata": {
+          "section": "short_medium_term_prospects",
+          "char_end": 3405,
+          "chunking": "paragraph_max1000",
+          "char_start": 2473,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.26891076605461595,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p18:p001",
+        "text": "The report has four sections. The first sets the stage by briefly describing how the COVID-19 pandemic has changed the world economy, building on the World Bank's June 2020 Global Economic Prospects report. The second section emphasizes how Vietnam has not only managed the health crisis exceptionally well but has also coped with the economic consequences. The third section discusses what the short- to medium-term prospects are for the Vietnamese economy, exploring how to jump start and maintain the recovery in a weak and uncertain global environment. The fourth and last section examines how Vietnam can build on various megatrends emerging in the global economy to accelerate the implementation of its policy agenda and become a high-income economy in the longer term.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 18,
+        "metadata": {
+          "section": "introduction",
+          "char_end": 1375,
+          "chunking": "paragraph_max1000",
+          "char_start": 600,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.24889981254781451,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2020-07:p46:p000 | data/raw/taking-stock-2020-07.pdf | page 46]\n\u0007 WHAT WILL BE THE\n\nNEW NORMAL FOR\n\nVIETNAM?\n\nA",
+    "context_ids": [
+      "ts-2020-07:p46:p000"
+    ],
+    "context_chars": 115,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "context_hit": false,
+    "elapsed_ms": 1.9363000174053013,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q19",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "What was Vietnam's overall ranking in the 2017 WEF Tourism Competitiveness Index (not the natural and cultural resources pillar)?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 37,
+        "evidence": "In terms of its overall score on this index in 2017, Vietnam was ranked 67th globally"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p38:p001",
+        "text": "Vietnam Regional average (ex. Vietnam) Regional frontier\n\nNote: Scores are on a 0-7 scale (7=most competitive). Source: World Economic Forum (WEF).\n\nFigure II.4: Changes in Vietnam's WEF competitiveness from 2015 to 2017\n\nICT Readiness (ICT)\n\nNatural Resources (NR)\n\nInternational Openness (IO)\n\nCultural Resources and Business Travel (CR&BT)\n\nEnvironmental Sustainability (ES)\n\nSafety and Security (S&S)\n\nHuman Resources and Labor Market (HR)\n\nAir Transport Infrastructure (ATI)\n\nHealth and Hygiene (H&H)\n\nPrice Competitiveness (PC)\n\nBusiness Environment (BE)\n\nGround and Port Infrastructure (G&PI)\n\nTourism Service Infrastructure (TSI)\n\nPrioritization of Travel & Tourism (PT&T)\n\nTOTAL TRAVEL AND TOURISM COMPETITIVENESS\n\nVietnam's relative change in WEF Tourism Competitiveness scores (2015-2017)\n\nRegional average (ex. Vietnam)\n\nVietnam\n\nPercent change in competitiveness score (2015-2017)\n\nSource: WEF.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 38,
+        "metadata": {
+          "section": "II.2_tourism_sector_performance",
+          "char_end": 1865,
+          "chunking": "paragraph_max1000",
+          "char_start": 958,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.37595681115938745,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p37:p001",
+        "text": "II.8 Vietnam's growing regional market share appears to reflect, in part, recent improvements to various dimensions of its tourism competitiveness. The World Economic Forum's (WEF) Tourism Competitiveness Index scores and ranks countries according to a variety of physical and institutional factors relevant to tourism. In terms of its overall score on this index in 2017, Vietnam was ranked 67th globally, stood on par with the average of the rest of its regional competitors, but was not the top regional performer (i.e. on the regional \"frontier\") in any single dimension of competitiveness (Figure II.3). However, since 2015 (the prior iteration of the index), Vietnam has achieved the largest overall improvement in competitiveness among its regional peers, with its largest strides coming in the areas of ICT readiness, international openness, safety and security, and ground and port infrastructure (Figure II.4).",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 37,
+        "metadata": {
+          "section": "II.2_tourism_sector_performance",
+          "char_end": 1811,
+          "chunking": "paragraph_max1000",
+          "char_start": 891,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.32760023807601063,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2019-07:p34:p002",
+        "text": "II.3 Vietnam, with its diverse natural and cultural tourism assets, is especially poised to benefit from this favorable demand landscape. According to the World Economic Forum's (WEF) latest 2017 Tourism Competitiveness Index, Vietnam ranks 32nd globally (out of 120 countries) in terms of the volume and attractiveness of its natural and cultural resources, and 3rd within the Southeast Asia region (behind Indonesia and Thailand). Notably, Vietnam is home to eight UNESCO World Heritage sites, tied with Indonesia for the most of any country in Southeast Asia. The country also features premier urban tourism destinations, such as Hanoi, Ho Chi Minh City, and Da Nang.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 34,
+        "metadata": {
+          "section": "II.1_tourism_strategic_context",
+          "char_end": 2464,
+          "chunking": "paragraph_max1000",
+          "char_start": 1794,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.29890360469586386,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p34:p002 | data/raw/taking-stock-2019-07.pdf | page 34]\nII.3 Vietnam, with its diverse natural and cultural tourism assets, is especially poised to benefit from this favorable demand landscape. According to the World Economic Forum's (WEF) latest 2017 Tourism Competitiveness Index, Vietnam ranks 32nd globally (out of 120 countries) in terms of the volume and attractiveness of its natural and cultural resources, and 3rd within the Southeast Asia region (behind Indonesia and Thailand). Notably, Vietnam is home to eight UNESCO World Heritage sites, tied with Indonesia for the most of any country in Southeast Asia. The country also features premier urban tourism destinations, such as Hanoi, Ho Chi Minh City, and Da Nang.",
+    "context_ids": [
+      "ts-2019-07:p34:p002"
+    ],
+    "context_chars": 738,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "context_hit": false,
+    "elapsed_ms": 1.8606000230647624,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q20",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "Is there a shortage of licensed tour guides for international visitors, and how has the guide-to-visitor ratio changed?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2019-07",
+        "page": 49,
+        "evidence": "in 2015, there were approximately 1.57 licensed tour guides per 1,000 international visitors, but this ratio has since fallen to 0.96 in 2017"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2019-07:p49:p001",
+        "text": "In certain localities, the strains on tour guide capacity are even more pronounced-the international guides-to-visitor ratio is as low as 0.04 in provinces such as Ba Ria-Vung Tau, Ninh Binh, and Binh Thuan (Figure II.17).\n\nII.27 Importantly, the tour guide workforce also appears to exhibit a noticeable gender imbalance. The ratio of male-to-female tour guides is 2 at the national level, but is as high as 4.6 in some localities. This potentially suggests the presence of either explicit or implicit barriers to female entry into this segment of tourism services, or a structural weakness in the recruitment process or training of women in tourism schools.\n\nFigure II.17: The scarcity of tour guides is acute in many localities\n\nQuang Binh\n\nNghe An\n\nHa Noi\n\nHo Chi Minh City\n\nLam Dong\n\nKhanh Hoa\n\nBinh Dinh\n\nTien Giang\n\nKien Giang\n\nBinh Thuan\n\nBa Ria-Vung Tau\n\nLicensed tour guides for international visitors (2016)\n\nGuides per 1,000 international visitors",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 49,
+        "metadata": {
+          "section": "II.4_tourism_challenges",
+          "char_end": 1833,
+          "chunking": "paragraph_max1000",
+          "char_start": 873,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.4049697705322036,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p49:p000",
+        "text": "Scarcity of tourism human resources\n\nII.26 The supply of tourism workers has been increasingly unable to keep up with the demands of the rapidly-growing sector. According to VNAT estimates, Vietnam's tourism sector directly employed around 750,000 workers in 2017, but will need roughly 870,000 workers by 2020 to keep up with demand growth, or 40,000 per year.35 However, current tourism schools churn out only around 15,000 graduates nationwide each year, a significant shortfall. This labor supply gap is most clearly seen in the growing shortage of qualified tour guides-in 2015, there were approximately 1.57 licensed tour guides per 1,000 international visitors, but this ratio has since fallen to 0.96 in 2017. For guides with licenses to tour domestic visitors, the ratio has similarly declined from 0.17 guides per 1,000 domestic visitors in 2014, to 0.11 in 2017.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 49,
+        "metadata": {
+          "section": "II.4_tourism_challenges",
+          "char_end": 873,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.3675652559781044,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p18:p001",
+        "text": "The report has four sections. The first sets the stage by briefly describing how the COVID-19 pandemic has changed the world economy, building on the World Bank's June 2020 Global Economic Prospects report. The second section emphasizes how Vietnam has not only managed the health crisis exceptionally well but has also coped with the economic consequences. The third section discusses what the short- to medium-term prospects are for the Vietnamese economy, exploring how to jump start and maintain the recovery in a weak and uncertain global environment. The fourth and last section examines how Vietnam can build on various megatrends emerging in the global economy to accelerate the implementation of its policy agenda and become a high-income economy in the longer term.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 18,
+        "metadata": {
+          "section": "introduction",
+          "char_end": 1375,
+          "chunking": "paragraph_max1000",
+          "char_start": 600,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.18780496430957724,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "context_chars": 0,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "context_hit": false,
+    "elapsed_ms": 1.9530000281520188,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q21",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "How many Vietnamese banks met the Basel II capital adequacy requirement at end-May 2020?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 24,
+        "evidence": "only 18 of 45 banks reported a Capital Adequacy Ratio in line with the Basel II requirements"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p24:p003",
+        "text": "The decline of headline inflation since the beginning of 2020 has allowed the SBV to gradually ease its monetary policy and mitigate the impact of the COVID-19 crisis (see next section for a description). These efforts have helped maintain credit expansion at 8.5 percent (y/y) during the first semester (figure 5). While this rate is significantly lower than in recent years, it was more than four times faster than GDP growth, indicating that commercial banks have extended credit to firms despite the uncertainties in the economy. The banking system remains stable and still profitable, but uncertainty and risks of increased default could increase financial sector stress over time. These risks can be exacerbated by the legacy of nonperforming loans and the undercapitalization of several banks (at end-May 2020, only 18 of 45 banks reported a Capital Adequacy Ratio in line with the Basel II requirements).",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 24,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 3611,
+          "chunking": "paragraph_max1000",
+          "char_start": 2699,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.3182709657649055,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p18:p001",
+        "text": "The report has four sections. The first sets the stage by briefly describing how the COVID-19 pandemic has changed the world economy, building on the World Bank's June 2020 Global Economic Prospects report. The second section emphasizes how Vietnam has not only managed the health crisis exceptionally well but has also coped with the economic consequences. The third section discusses what the short- to medium-term prospects are for the Vietnamese economy, exploring how to jump start and maintain the recovery in a weak and uncertain global environment. The fourth and last section examines how Vietnam can build on various megatrends emerging in the global economy to accelerate the implementation of its policy agenda and become a high-income economy in the longer term.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 18,
+        "metadata": {
+          "section": "introduction",
+          "char_end": 1375,
+          "chunking": "paragraph_max1000",
+          "char_start": 600,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.1608571471346022,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2019-07:p22:p004",
+        "text": "May-12 May-13 May-14 May-15 May-16 May-17 May-18 May-19\n\nG-bond 1YR G-bond 5YR G-bond 10YR\n\nSource: MOF.",
+        "source_id": "ts-2019-07",
+        "source": "data/raw/taking-stock-2019-07.pdf",
+        "page": 22,
+        "metadata": {
+          "section": "I.2_recent_developments_vietnam",
+          "char_end": 3665,
+          "chunking": "paragraph_max1000",
+          "char_start": 3561,
+          "edition_year": 2019,
+          "document_type": "economic_update"
+        },
+        "score": 0.15876293501047833,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2019-07:p22:p004 | data/raw/taking-stock-2019-07.pdf | page 22]\nMay-12 May-13 May-14 May-15 May-16 May-17 May-18 May-19\n\nG-bond 1YR G-bond 5YR G-bond 10YR\n\nSource: MOF.",
+    "context_ids": [
+      "ts-2019-07:p22:p004"
+    ],
+    "context_chars": 172,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": false,
+    "elapsed_ms": 1.3543999521061778,
+    "usage": {},
+    "cost_usd": 0.0
+  },
+  {
+    "query_id": "q22",
+    "split": "dev",
+    "config": "tfidf",
+    "question": "According to the labour ministry, how many workers lost their jobs or had their hours or income cut during the pandemic?",
+    "filter": null,
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "ts-2020-07",
+        "page": 29,
+        "evidence": "approximately 8 million Vietnamese workers have lost their jobs at one point in time in the last few months, while another 17 million had to cut their working hours or income"
+      }
+    ],
+    "gold_mode": "any",
+    "results": [
+      {
+        "id": "ts-2020-07:p29:p001",
+        "text": "Because it is relatively difficult to assess the magnitude of such impacts with precision and in real time, four complementary sources of information have been used in this report. The first source is the Ministry of Labor, Invalids and Social Affairs (MOLISA), which has communicated that approximately 8 million Vietnamese workers have lost their jobs at one point in time in the last few months, while another 17 million had to cut their working hours or income.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 29,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 1172,
+          "chunking": "paragraph_max1000",
+          "char_start": 707,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.39372984950010903,
+        "rank": 1,
+        "strategy": "tfidf",
+        "hit": true
+      },
+      {
+        "id": "ts-2020-07:p47:p000",
+        "text": "a low capacity. In the job market, many white-collar employees whose jobs can done at home have been paid, while others have lost all their savings. These differentiated impacts will not only influence the short term but also shape the future of the country's labor market and the way firms operate. Over the past few decades, Vietnam has done a great job reducing extreme poverty by creating millions of productive jobs, mainly in manufacturing, and in sharing the fruits of its rapid growth. Looking ahead, these gains will need to be preserved by adapting the labor force skills to the new demands from firms. The state may also rethink its social protection policy, notably by reforming the existing tax system, so it can help secure jobs and income to the most vulnerable groups and manage the emergence of future inequalities. These reforms should be at the center of Vietnam's policy agenda so that Vietnam continues to be one of the most dynamic and inclusive economies in the world.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 47,
+        "metadata": {
+          "section": "new_normal",
+          "char_end": 991,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.17000147812094796,
+        "rank": 2,
+        "strategy": "tfidf",
+        "hit": false
+      },
+      {
+        "id": "ts-2020-07:p29:p000",
+        "text": "Who have been the most economically affected by the COVID-19 crisis?\n\nBeyond the macroeconomic impact of COVID-19, the pandemic has affected many businesses and people in Vietnam. If almost everyone has been affected at one point in time, it seems that the negative effects have been generally temporary due to the rebound of the domestic economy since the end of April. Most family businesses - which account for the vast majority of firms operating in Vietnam - lost money during the lockdown but were able to recover quickly because of their accumulate savings, operating flexibility and resilience. However, the impact of COVID-19 on businesses and workers varies greatly across sectors and locations.",
+        "source_id": "ts-2020-07",
+        "source": "data/raw/taking-stock-2020-07.pdf",
+        "page": 29,
+        "metadata": {
+          "section": "impact_on_vietnam_economy",
+          "char_end": 705,
+          "chunking": "paragraph_max1000",
+          "char_start": 0,
+          "edition_year": 2020,
+          "document_type": "economic_update"
+        },
+        "score": 0.1604772230638538,
+        "rank": 3,
+        "strategy": "tfidf",
+        "hit": false
+      }
+    ],
+    "context": "[ts-2020-07:p29:p001 | data/raw/taking-stock-2020-07.pdf | page 29]\nBecause it is relatively difficult to assess the magnitude of such impacts with precision and in real time, four complementary sources of information have been used in this report. The first source is the Ministry of Labor, Invalids and Social Affairs (MOLISA), which has communicated that approximately 8 million Vietnamese workers have lost their jobs at one point in time in the last few months, while another 17 million had to cut their working hours or income.",
+    "context_ids": [
+      "ts-2020-07:p29:p001"
+    ],
+    "context_chars": 533,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "context_hit": true,
+    "elapsed_ms": 1.5694999601691961,
+    "usage": {},
+    "cost_usd": 0.0
+  }
+]
